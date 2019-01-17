@@ -1,0 +1,2043 @@
+[2019-01-15 11:04:21] local.ERROR: Class App\Admin\Controllers\LinksController::class does not exist {"exception":"[object] (ReflectionException(code: -1): Class App\\Admin\\Controllers\\LinksController::class does not exist at /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Container/Container.php:779)
+[stacktrace]
+#0 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Container/Container.php(779): ReflectionClass->__construct('App\\\\Admin\\\\Contr...')
+#1 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Container/Container.php(658): Illuminate\\Container\\Container->build('App\\\\Admin\\\\Contr...')
+#2 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Container/Container.php(609): Illuminate\\Container\\Container->resolve('App\\\\Admin\\\\Contr...', Array)
+#3 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(735): Illuminate\\Container\\Container->make('App\\\\Admin\\\\Contr...', Array)
+#4 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(233): Illuminate\\Foundation\\Application->make('App\\\\Admin\\\\Contr...')
+#5 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(833): Illuminate\\Routing\\Route->getController()
+#6 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#7 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(695): Illuminate\\Routing\\Route->gatherMiddleware()
+#8 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(675): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#9 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#10 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#11 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#12 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#13 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /Users/zhaoyejin/www/laravel_shop/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#32 /Users/zhaoyejin/www/laravel_shop/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#33 {main}
+"} 
+[2019-01-15 11:08:43] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (SQL: insert into `links` (`keywords`, `url`, `updated_at`, `created_at`) values (九龙山旅游, http://www.jiulongshan.com, 2019-01-15 11:08:43, 2019-01-15 11:08:43)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (SQL: insert into `links` (`keywords`, `url`, `updated_at`, `created_at`) values (九龙山旅游, http://www.jiulongshan.com, 2019-01-15 11:08:43, 2019-01-15 11:08:43)) at /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, Doctrine\\DBAL\\Driver\\PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:63, PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:61)
+[stacktrace]
+#0 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `li...', Array, Object(Closure))
+#1 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('insert into `li...', Array, Object(Closure))
+#2 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `li...', Array)
+#3 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `li...', Array)
+#4 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2628): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `li...', Array, 'id')
+#5 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1318): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(823): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(788): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(651): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(366): Illuminate\\Database\\Eloquent\\Model->save()
+#10 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php(29): Encore\\Admin\\Form->Encore\\Admin\\{closure}(Object(Illuminate\\Database\\MySqlConnection))
+#11 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(327): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#12 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\DatabaseManager->__call('transaction', Array)
+#13 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(369): Illuminate\\Support\\Facades\\Facade::__callStatic('transaction', Array)
+#14 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Controllers/HasResourceActions.php(26): Encore\\Admin\\Form->store()
+#15 [internal function]: App\\Admin\\Controllers\\LinksController->store()
+#16 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#17 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#18 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Admin\\Controllers\\LinksController), 'store')
+#19 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#20 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Routing\\Route->run()
+#21 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Permission.php(42): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Permission->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Bootstrap.php(36): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Bootstrap->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/LogOperation.php(38): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\LogOperation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Pjax.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Pjax->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Authenticate.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#58 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#59 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#60 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#61 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/zhaoyejin/www/laravel_shop/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#73 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#74 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#79 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#80 /Users/zhaoyejin/www/laravel_shop/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#81 {main}
+"} 
+[2019-01-15 12:20:10] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (SQL: insert into `websites` (`webname`, `title`, `description`, `keywords`, `email`, `address`, `tel`, `phone`, `updated_at`, `created_at`) values (九龙山旅游, www.jiulongshan.com, 九龙山旅游是夏季旅游的好去处。, 九龙山旅游、泰安旅游、户外旅游, 103225222@qq.com, 山东省泰安市九龙山旅游风景度假区, 05387688221, 18301231977, 2019-01-15 12:20:10, 2019-01-15 12:20:10)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (SQL: insert into `websites` (`webname`, `title`, `description`, `keywords`, `email`, `address`, `tel`, `phone`, `updated_at`, `created_at`) values (九龙山旅游, www.jiulongshan.com, 九龙山旅游是夏季旅游的好去处。, 九龙山旅游、泰安旅游、户外旅游, 103225222@qq.com, 山东省泰安市九龙山旅游风景度假区, 05387688221, 18301231977, 2019-01-15 12:20:10, 2019-01-15 12:20:10)) at /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, Doctrine\\DBAL\\Driver\\PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:63, PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:61)
+[stacktrace]
+#0 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `we...', Array, Object(Closure))
+#1 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('insert into `we...', Array, Object(Closure))
+#2 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `we...', Array)
+#3 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `we...', Array)
+#4 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2628): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `we...', Array, 'id')
+#5 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1318): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(823): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(788): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(651): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(366): Illuminate\\Database\\Eloquent\\Model->save()
+#10 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php(29): Encore\\Admin\\Form->Encore\\Admin\\{closure}(Object(Illuminate\\Database\\MySqlConnection))
+#11 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(327): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#12 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\DatabaseManager->__call('transaction', Array)
+#13 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(369): Illuminate\\Support\\Facades\\Facade::__callStatic('transaction', Array)
+#14 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Controllers/HasResourceActions.php(26): Encore\\Admin\\Form->store()
+#15 [internal function]: App\\Admin\\Controllers\\WebsitesController->store()
+#16 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#17 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#18 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Admin\\Controllers\\WebsitesController), 'store')
+#19 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#20 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Routing\\Route->run()
+#21 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Permission.php(42): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Permission->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Bootstrap.php(36): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Bootstrap->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/LogOperation.php(38): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\LogOperation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Pjax.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Pjax->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Authenticate.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#58 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#59 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#60 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#61 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/zhaoyejin/www/laravel_shop/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#73 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#74 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#79 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#80 /Users/zhaoyejin/www/laravel_shop/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#81 {main}
+"} 
+[2019-01-15 16:35:18] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (SQL: insert into `selling_ico` (`name`, `url`, `updated_at`, `created_at`) values (热卖, images/20140611113938.gif, 2019-01-15 16:35:18, 2019-01-15 16:35:18)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (SQL: insert into `selling_ico` (`name`, `url`, `updated_at`, `created_at`) values (热卖, images/20140611113938.gif, 2019-01-15 16:35:18, 2019-01-15 16:35:18)) at /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, Doctrine\\DBAL\\Driver\\PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:63, PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:61)
+[stacktrace]
+#0 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `se...', Array, Object(Closure))
+#1 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('insert into `se...', Array, Object(Closure))
+#2 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `se...', Array)
+#3 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `se...', Array)
+#4 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2628): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `se...', Array, 'id')
+#5 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1318): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(823): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(788): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(651): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(366): Illuminate\\Database\\Eloquent\\Model->save()
+#10 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php(29): Encore\\Admin\\Form->Encore\\Admin\\{closure}(Object(Illuminate\\Database\\MySqlConnection))
+#11 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(327): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#12 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\DatabaseManager->__call('transaction', Array)
+#13 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(369): Illuminate\\Support\\Facades\\Facade::__callStatic('transaction', Array)
+#14 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Controllers/HasResourceActions.php(26): Encore\\Admin\\Form->store()
+#15 [internal function]: App\\Admin\\Controllers\\SellingController->store()
+#16 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#17 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#18 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Admin\\Controllers\\SellingController), 'store')
+#19 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#20 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Routing\\Route->run()
+#21 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Permission.php(42): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Permission->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Bootstrap.php(36): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Bootstrap->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/LogOperation.php(38): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\LogOperation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Pjax.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Pjax->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Authenticate.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#58 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#59 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#60 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#61 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/zhaoyejin/www/laravel_shop/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#73 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#74 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#79 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#80 /Users/zhaoyejin/www/laravel_shop/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#81 {main}
+"} 
+[2019-01-15 16:36:21] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list' (SQL: insert into `selling_ico` (`name`, `url`, `updated_at`, `created_at`) values (热卖, images/405bc6d55c62b08b6502f1813c7c2428.gif, 2019-01-15 16:36:21, 2019-01-15 16:36:21)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list' (SQL: insert into `selling_ico` (`name`, `url`, `updated_at`, `created_at`) values (热卖, images/405bc6d55c62b08b6502f1813c7c2428.gif, 2019-01-15 16:36:21, 2019-01-15 16:36:21)) at /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, Doctrine\\DBAL\\Driver\\PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:63, PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_at' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:61)
+[stacktrace]
+#0 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `se...', Array, Object(Closure))
+#1 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('insert into `se...', Array, Object(Closure))
+#2 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `se...', Array)
+#3 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `se...', Array)
+#4 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2628): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `se...', Array, 'id')
+#5 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1318): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(823): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(788): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(651): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(366): Illuminate\\Database\\Eloquent\\Model->save()
+#10 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php(29): Encore\\Admin\\Form->Encore\\Admin\\{closure}(Object(Illuminate\\Database\\MySqlConnection))
+#11 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(327): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#12 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\DatabaseManager->__call('transaction', Array)
+#13 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(369): Illuminate\\Support\\Facades\\Facade::__callStatic('transaction', Array)
+#14 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Controllers/HasResourceActions.php(26): Encore\\Admin\\Form->store()
+#15 [internal function]: App\\Admin\\Controllers\\SellingController->store()
+#16 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#17 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#18 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Admin\\Controllers\\SellingController), 'store')
+#19 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#20 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Routing\\Route->run()
+#21 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Permission.php(42): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Permission->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Bootstrap.php(36): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Bootstrap->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/LogOperation.php(38): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\LogOperation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Pjax.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Pjax->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Authenticate.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#58 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#59 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#60 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#61 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/zhaoyejin/www/laravel_shop/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#73 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#74 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#79 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#80 /Users/zhaoyejin/www/laravel_shop/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#81 {main}
+"} 
+[2019-01-15 17:29:39] local.ERROR: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'created_at' at row 1 (SQL: insert into `reserve` (`name`, `status`, `content`, `updated_at`, `created_at`) values (预定须知, 1, <p><strong>预订限制</strong></p>
+
+<p>* 本产品不接受75岁以上(含)客人预订，敬请原谅。</p>
+
+<p>* 70周岁（含）以上老年人预订出行需确保身体健康适宜旅游，并有18周岁以上家属或朋友（因服务能力所限无法接待及限制接待的人除外）全程陪同出行。</p>
+
+<p>* 本产品不接受18周岁以下(含)的客人单独报名出游，敬请谅解！</p>
+
+<p>* 报价是按照2成人入住1间房计算的价格，本产品不接受拼房,如您的订单产生单房，请在预订时选择单房差，携程将向您收取相应的费用。由于12岁以下儿童费用为不占床、不含早餐之报价，若儿童需占床含早，请在预订时选择单房差。</p>
+
+<p>预订说明</p>
+
+<p>* 请您在预订时务必提供准确、完整的信息（姓名、性别、证件号码、国籍、联系方式、是否成人或儿童等），以免产生预订错误，影响出行。如因客人提供错误个人信息而造成损失，我社不承担任何责任。</p>
+
+<p>* 本产品目的地海拔较高，有严重高血压、心脏病等疾病的客人及老年客人，请根据自身条件，遵医嘱，谨慎决定是否出行。</p>
+
+<p>* 儿童门票不接受预订，请自行在景区购买。</p>
+
+<p>&nbsp;</p>
+
+<p><strong>产品说明</strong></p>
+
+<p>* 本线路在不影响您行程的情况下，部分行程段可能会和其他线路合并用车、共同游玩，具体以当天陪同工作人员协调安排为准。</p>
+
+<p>* 团队中可能会有入住不同酒店的其他携程团友一同出行，如涉及不同酒店客人的接送事宜，当地司导人员会根据团队实际情况进行合理安排，敬请理解、配合，谢谢。</p>
+
+<p>* 本产品行程实际出行中，在不减少景点且征得客人同意的前提下，导游、司机可能会根据天气、交通等情况，对您的行程进行适当调整（如调整景点游览顺序等），以确保行程顺利进行。如因不可抗力等因素确实无法执行原行程计划，对于因此而造成的费用变更，我社实行多退少补，敬请配合。</p>
+
+<p>* 行程中的赠送项目，如因交通、天气等不可抗因素导致不能赠送的、或因您个人原因不能参观的，费用不退，敬请谅解。</p>
+
+<p>* 持老年证、军官证、学生证等优惠证件的游客可享受景区门票优惠政策，具体以出行当日景区公布政策为准。请具备条件的游客携带好相关证件，届时由导游统一安排，按打包行程中客人已享的优惠价格，现场退还差价门票优惠（4月1日-11月15日）：半票九寨单次退50元/人，黄龙退50元/人,免票九寨单次退100元/人，黄龙退100元/人。九寨沟为免票的客人，景区内保险费10元/人，18周岁以下无优惠票退还。</p>
+
+<p>* 当地酒店条件有限，请勿以城市标准衡量。酒店定时供应热水及空调，敬请理解！</p>
+
+<p>* 因当地经济条件有限，交通、酒店服务及设施、餐饮等方面与发达城市相比会有一定的差距，敬请谅解。</p>
+
+<p>&nbsp;</p>
+
+<p><strong>违约条款</strong></p>
+
+<p>* 旅行社违约：<br />
+行程前7日至4日，退还全额旅游费用，支付旅游费用总额10％的违约金。<br />
+行程前3日至1日，退还全额旅游费用，支付旅游费用总额15％的违约金。<br />
+行程开始当日，退还全额旅游费用，支付旅游费用总额20％的违约金。</p>
+
+<p>* 旅游者违约：<br />
+在行程前解除合同的，机（车、船）票费用按实结算后，其余必要的费用扣除标准为：<br />
+行程前7日至4日，收取旅游费用总额10％的违约金。<br />
+行程前3日至1日，收取旅游费用总额20％的违约金。<br />
+行程开始当日，收取旅游费用总额30％的违约金。</p>
+
+<p>&nbsp;</p>
+
+<p><strong>出行须知</strong></p>
+
+<p>* 最晚在出行前1天，导游或我司工作人员会短信联系您，告知导游、司机联系方式及其他具体出行事宜，请保持手机畅通。如您在时间之前仍未接到通知，请速来电咨询电话。</p>
+
+<p>* 在旅游旺季或者其他一些特殊情况下，为了保证您的行程游览不受影响，行程的出发时间可能会提早（具体出发时间以导游通知为准），导致您不能正常享用酒店早餐。我们建议您跟酒店协调打包早餐或者自备早餐，敬请谅解。</p>
+
+<p>* 请在导游约定的时间到达上车地点集合，切勿迟到，以免耽误其他游客行程。若因迟到导致无法随车游览，责任自负，敬请谅解。</p>
+
+<p>* 为普及旅游安全知识及旅游文明公约，使您的旅程顺利圆满完成服液等。不建议您到当地购买相关产品。</p>
+
+<p>* 逢周末和节假日出行，可能因景区、道路交通拥堵等原因造成回程时间延误，为避免造成不必要的损失，不建议客人预订返程当天的大交通（如飞机、火车、轮船等）。</p>
+
+<p>* 旅游团队用餐，旅行社按承诺标准确保餐饮卫生及餐食数量，但不同地区餐食口味有差异，不一定满足游客口味需求，敬请见谅。</p>
+
+<p>* 在旅游行程中，个别景点景区、餐厅、休息区等场所存在商场等购物场所，上述场所非旅行社安排的指定购物场所。携程提醒旅游者根据自身需要，理性消费并索要必要票据。如产生消费争议，请自行承担相关责任义务，由此带来的不便，敬请谅解！</p>, 2019-01-15 17:29:39, 2019-01-15 17:29:39)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 22001): SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'created_at' at row 1 (SQL: insert into `reserve` (`name`, `status`, `content`, `updated_at`, `created_at`) values (预定须知, 1, <p><strong>预订限制</strong></p>
+
+<p>* 本产品不接受75岁以上(含)客人预订，敬请原谅。</p>
+
+<p>* 70周岁（含）以上老年人预订出行需确保身体健康适宜旅游，并有18周岁以上家属或朋友（因服务能力所限无法接待及限制接待的人除外）全程陪同出行。</p>
+
+<p>* 本产品不接受18周岁以下(含)的客人单独报名出游，敬请谅解！</p>
+
+<p>* 报价是按照2成人入住1间房计算的价格，本产品不接受拼房,如您的订单产生单房，请在预订时选择单房差，携程将向您收取相应的费用。由于12岁以下儿童费用为不占床、不含早餐之报价，若儿童需占床含早，请在预订时选择单房差。</p>
+
+<p>预订说明</p>
+
+<p>* 请您在预订时务必提供准确、完整的信息（姓名、性别、证件号码、国籍、联系方式、是否成人或儿童等），以免产生预订错误，影响出行。如因客人提供错误个人信息而造成损失，我社不承担任何责任。</p>
+
+<p>* 本产品目的地海拔较高，有严重高血压、心脏病等疾病的客人及老年客人，请根据自身条件，遵医嘱，谨慎决定是否出行。</p>
+
+<p>* 儿童门票不接受预订，请自行在景区购买。</p>
+
+<p>&nbsp;</p>
+
+<p><strong>产品说明</strong></p>
+
+<p>* 本线路在不影响您行程的情况下，部分行程段可能会和其他线路合并用车、共同游玩，具体以当天陪同工作人员协调安排为准。</p>
+
+<p>* 团队中可能会有入住不同酒店的其他携程团友一同出行，如涉及不同酒店客人的接送事宜，当地司导人员会根据团队实际情况进行合理安排，敬请理解、配合，谢谢。</p>
+
+<p>* 本产品行程实际出行中，在不减少景点且征得客人同意的前提下，导游、司机可能会根据天气、交通等情况，对您的行程进行适当调整（如调整景点游览顺序等），以确保行程顺利进行。如因不可抗力等因素确实无法执行原行程计划，对于因此而造成的费用变更，我社实行多退少补，敬请配合。</p>
+
+<p>* 行程中的赠送项目，如因交通、天气等不可抗因素导致不能赠送的、或因您个人原因不能参观的，费用不退，敬请谅解。</p>
+
+<p>* 持老年证、军官证、学生证等优惠证件的游客可享受景区门票优惠政策，具体以出行当日景区公布政策为准。请具备条件的游客携带好相关证件，届时由导游统一安排，按打包行程中客人已享的优惠价格，现场退还差价门票优惠（4月1日-11月15日）：半票九寨单次退50元/人，黄龙退50元/人,免票九寨单次退100元/人，黄龙退100元/人。九寨沟为免票的客人，景区内保险费10元/人，18周岁以下无优惠票退还。</p>
+
+<p>* 当地酒店条件有限，请勿以城市标准衡量。酒店定时供应热水及空调，敬请理解！</p>
+
+<p>* 因当地经济条件有限，交通、酒店服务及设施、餐饮等方面与发达城市相比会有一定的差距，敬请谅解。</p>
+
+<p>&nbsp;</p>
+
+<p><strong>违约条款</strong></p>
+
+<p>* 旅行社违约：<br />
+行程前7日至4日，退还全额旅游费用，支付旅游费用总额10％的违约金。<br />
+行程前3日至1日，退还全额旅游费用，支付旅游费用总额15％的违约金。<br />
+行程开始当日，退还全额旅游费用，支付旅游费用总额20％的违约金。</p>
+
+<p>* 旅游者违约：<br />
+在行程前解除合同的，机（车、船）票费用按实结算后，其余必要的费用扣除标准为：<br />
+行程前7日至4日，收取旅游费用总额10％的违约金。<br />
+行程前3日至1日，收取旅游费用总额20％的违约金。<br />
+行程开始当日，收取旅游费用总额30％的违约金。</p>
+
+<p>&nbsp;</p>
+
+<p><strong>出行须知</strong></p>
+
+<p>* 最晚在出行前1天，导游或我司工作人员会短信联系您，告知导游、司机联系方式及其他具体出行事宜，请保持手机畅通。如您在时间之前仍未接到通知，请速来电咨询电话。</p>
+
+<p>* 在旅游旺季或者其他一些特殊情况下，为了保证您的行程游览不受影响，行程的出发时间可能会提早（具体出发时间以导游通知为准），导致您不能正常享用酒店早餐。我们建议您跟酒店协调打包早餐或者自备早餐，敬请谅解。</p>
+
+<p>* 请在导游约定的时间到达上车地点集合，切勿迟到，以免耽误其他游客行程。若因迟到导致无法随车游览，责任自负，敬请谅解。</p>
+
+<p>* 为普及旅游安全知识及旅游文明公约，使您的旅程顺利圆满完成服液等。不建议您到当地购买相关产品。</p>
+
+<p>* 逢周末和节假日出行，可能因景区、道路交通拥堵等原因造成回程时间延误，为避免造成不必要的损失，不建议客人预订返程当天的大交通（如飞机、火车、轮船等）。</p>
+
+<p>* 旅游团队用餐，旅行社按承诺标准确保餐饮卫生及餐食数量，但不同地区餐食口味有差异，不一定满足游客口味需求，敬请见谅。</p>
+
+<p>* 在旅游行程中，个别景点景区、餐厅、休息区等场所存在商场等购物场所，上述场所非旅行社安排的指定购物场所。携程提醒旅游者根据自身需要，理性消费并索要必要票据。如产生消费争议，请自行承担相关责任义务，由此带来的不便，敬请谅解！</p>, 2019-01-15 17:29:39, 2019-01-15 17:29:39)) at /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, Doctrine\\DBAL\\Driver\\PDOException(code: 22001): SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'created_at' at row 1 at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:119, PDOException(code: 22001): SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'created_at' at row 1 at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:117)
+[stacktrace]
+#0 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `re...', Array, Object(Closure))
+#1 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('insert into `re...', Array, Object(Closure))
+#2 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `re...', Array)
+#3 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `re...', Array)
+#4 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2628): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `re...', Array, 'id')
+#5 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1318): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(823): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(788): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(651): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(366): Illuminate\\Database\\Eloquent\\Model->save()
+#10 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php(29): Encore\\Admin\\Form->Encore\\Admin\\{closure}(Object(Illuminate\\Database\\MySqlConnection))
+#11 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(327): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#12 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\DatabaseManager->__call('transaction', Array)
+#13 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(369): Illuminate\\Support\\Facades\\Facade::__callStatic('transaction', Array)
+#14 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Controllers/HasResourceActions.php(26): Encore\\Admin\\Form->store()
+#15 [internal function]: App\\Admin\\Controllers\\ReserveController->store()
+#16 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#17 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#18 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Admin\\Controllers\\ReserveController), 'store')
+#19 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#20 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Routing\\Route->run()
+#21 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Permission.php(42): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Permission->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Bootstrap.php(36): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Bootstrap->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/LogOperation.php(38): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\LogOperation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Pjax.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Pjax->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Authenticate.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#58 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#59 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#60 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#61 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/zhaoyejin/www/laravel_shop/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#73 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#74 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#79 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#80 /Users/zhaoyejin/www/laravel_shop/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#81 {main}
+"} 
+[2019-01-15 18:36:30] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column '所属产品' in 'field list' (SQL: insert into `contract` (`name`, `所属产品`, `status`, `partyB`, `content`, `updated_at`, `created_at`) values (国内旅游合同, 1, 1, 北京小熊假期文化传媒有限公司, <p>为保证旅游服务质量，明确甲乙双方的权利与义务，依据我国《合同法》、《旅行社条例》等法律法规的规定，本着诚实信用、公平协商的原则，现就有关组团旅游事宜达成协议如下：</p>
+
+<p>第一条　本合同词语定义</p>
+
+<p>1、旅行社，指取得《旅行社业务经营许可证》和《企业法人营业执照》、经营旅游业务的企业法人。</p>
+
+<p>2、旅游者，指与旅行社签订国内旅游合同，参加国内旅游活动的内地居民或者团体。</p>
+
+<p>3、国内旅游服务，指旅行社依据《旅行社条例》等法律法规，组织旅游者在中华人民共和国境内（不含香港、澳门、台湾地区）旅游，代订公共交通客票，安排餐饮、住宿、游览等服务活动。</p>
+
+<p>4、旅游费用，指旅游者支付给旅行社，用于购买国内旅游服务的费用。</p>
+
+<p>旅游费用包括：</p>
+
+<p>(1)交通费；</p>
+
+<p>(2)住宿费；</p>
+
+<p>(3)餐费（不含酒水费）；</p>
+
+<p>(4)旅行社统一安排的景区景点的第一道门票费；</p>
+
+<p>(5)行程中安排的其他项目费用；</p>
+
+<p>(6)导游服务费和旅行社（含旅游目的地地接旅行社）的其他服务费用。</p>
+
+<p>旅游费用不包括：</p>
+
+<p>(1)旅游者投保的个人旅游保险费用；</p>
+
+<p>(2)合同约定需要旅游者另行付费项目的费用；</p>
+
+<p>(3)合同未约定由旅行社支付的费用，包括但不限于行程以外非合同约定活动项目所需的费用、自行安排活动期间发生的费用；</p>
+
+<p>(4)行程中发生的旅游者个人费用，包括但不限于交通工具上的非免费餐饮费、行李超重费，住宿期间的洗衣、电话、饮料及酒类费，个人娱乐费用，个人伤病医疗费，寻找个人遗失物品的费用及报酬，个人原因造成的赔偿费用。</p>
+
+<p>5、购物场所，指《旅游行程安排单》中安排的，专门或者主要以购物为活动内容的场所。</p>
+
+<p>6、自由活动，指《旅游行程安排单》中安排的自由活动。</p>
+
+<p>7、自行安排活动期间，指《旅游行程安排单》中安排的自由活动期间、旅游者不参加旅游行程活动期间、每日行程开始前、结束后旅游者离开住宿设施的个人活动期间、旅游者经导游同意暂时离团的个人活动期间。</p>
+
+<p>8、旅行社责任保险，指以旅行社因其组织的旅游活动对旅游者和受其委派并为旅游者提供服务的人员依法应当承担的赔偿责任为保险标的的保险。</p>
+
+<p>9、旅游者投保的个人旅游保险，指旅游者自己购买或者通过旅行社、航空机票代理点、景区等保险代理机构购买的以旅行期间自身的生命、身体、财产或者有关利益为保险标的的短期保险，包括但不限于航空意外险、旅游意外险、紧急救援保险、特殊项目意外险。</p>
+
+<p>10、离团，指团队旅游者经导游同意不随团队完成约定行程的行为。</p>
+
+<p>11、脱团，指团队旅游者未经导游同意脱离旅游团队，不随团队完成约定行程的行为。</p>
+
+<p>12、转团，指由于低于成团人数，旅行社征得旅游者书面同意，在出发前将旅游者转至其他旅行社所组的国内旅游团队的行为。</p>
+
+<p>13、拼团，指旅行社在保证所承诺的服务内容和标准不变的前提下，在签订合同时经旅游者同意，与其他旅行社招徕的旅游者拼成一个团统一安排旅游服务的行为。</p>
+
+<p>14、不可抗力，指不能预见、不能避免并不能克服的客观情况，包括但不限于因自然原因和社会原因引起的，如自然灾害、战争、恐怖活动、动乱、骚乱、罢工、突发公共卫生事件、政府行为。</p>
+
+<p>15、意外事件，指因当事人故意或者过失以外的偶然因素引发的事件，包括但不限于重大礼宾活动导致的交通堵塞、列车航班晚点、景点临时不开放。</p>
+
+<p>16、业务损失费，指旅行社因旅游者行前退团而产生的经济损失。包括乘坐飞机（车、船）等交通工具的费用（含预订金）、饭店住宿费用（含预订金）、旅游观光汽车的人均车租等已发生的实际费用。</p>
+
+<p>17、黄金周，指通过调休将春节、&ldquo;十一&rdquo;等3天法定节日与前后公休日相连形成通常为7天的公众节假日。</p>
+
+<p>&nbsp;</p>
+
+<p>第二章&nbsp; 合同的签订</p>
+
+<p>&nbsp;</p>
+
+<p>第二条&nbsp; &nbsp; &nbsp; 旅游行程安排单</p>
+
+<p>旅行社应当提供带团号的《旅游行程安排单》（以下简称《行程单》），经双方签字或者盖章确认后作为本合同的组成部分。《行程单》应当对如下内容作出明确的说明：</p>
+
+<p>（1）旅游行程的出发地、途经地、目的地，线路行程时间和具体安排（按自然日计算，含乘飞机、车、船等在途时间，不足24小时以一日计）；</p>
+
+<p>（2）旅游目的地地接旅行社的名称、地址、联系人和联系电话；</p>
+
+<p>（3）交通服务安排及其标准（明确交通工具及档次等级、出发时间以及是否需中转等信息）；</p>
+
+<p>（4）住宿服务安排及其标准（明确住宿饭店的名称、地点、星级，非星级饭店应当注明是否有空调、热水、独立卫生间等相关服务设施）；</p>
+
+<p>（5）用餐（早餐和正餐）服务安排及其标准（明确用餐次数、地点、标准）；</p>
+
+<p>（6）旅行社统一安排的游览项目的具体内容及时间（明确旅游线路内容包括景区点及游览项目名称等，景区点停留的最少时间）；</p>
+
+<p>（7）自由活动的时间和次数；</p>
+
+<p>（8）购物安排（旅行社安排的购物次数不超过行程日数的一半，并同时列明购物场所名称、停留的最多时间及主要商品等内容）；</p>
+
+<p>（9）行程安排的娱乐活动（明确娱乐活动的时间、地点和项目内容）；</p>
+
+<p>（10）另行付费项目（如有安排，旅行社应当在签约时向旅游者提供《另行付费项目表》，列明另行付费项目的价格、参加该另行付费项目的交通费和导游服务费等，由旅游者自愿选择并签字确认后作为本合同的组成部分；另行付费项目应当以不影响原计划行程为原则）；</p>
+
+<p>《行程单》用语须准确清晰，在表明服务标准用语中不应当出现&ldquo;准&times;星级&rdquo;、&ldquo;豪华&rdquo;、&ldquo;仅供参考&rdquo;、&ldquo;以&times;&times;为准&rdquo;、&ldquo;与&times;&times;同级&rdquo;等不确定性用语。</p>
+
+<p>第三条&nbsp; &nbsp;&nbsp; 签订合同</p>
+
+<p>旅游者应当认真阅读本合同条款、《行程单》和《另行付费项目表》，在旅游者理解本合同条款及有关附件后，旅行社和旅游者应当签订书面合同。</p>
+
+<p>第四条&nbsp; &nbsp;&nbsp; 旅游广告及宣传品</p>
+
+<p>旅行社的旅游广告及宣传品应当遵循诚实信用的原则，其内容符合《中华人民共和国合同法》要约规定的，视为本合同的组成部分，对旅行社和旅游者双方具有约束力。</p>
+
+<p>第五条　合同效力</p>
+
+<p>本合同一式两份，双方各持一份，具有同等法律效力，自双方当事人签字或者盖章之日起生效。</p>
+
+<p>&nbsp;</p>
+
+<p>第三章&nbsp; 合同双方的权利义务</p>
+
+<p>&nbsp;</p>
+
+<p>第六条&nbsp; &nbsp;&nbsp; 旅行社的权利</p>
+
+<p>1、根据旅游者的身体健康状况及相关条件决定是否接纳旅游者报名参团；</p>
+
+<p>2、核实旅游者提供的相关信息资料；</p>
+
+<p>3、按照合同约定向旅游者收取全额旅游费用；</p>
+
+<p>4、旅游团队遇紧急情况时，可以采取紧急避险措施并要求旅游者配合；</p>
+
+<p>5、拒绝旅游者提出的超出合同约定的不合理要求。</p>
+
+<p>第七条&nbsp; 旅行社的义务</p>
+
+<p>1、按照合同和《行程单》约定的内容和标准为旅游者提供服务；</p>
+
+<p>2、在出团前如实告知具体行程安排和有关具体事项，具体事项包括但不限于所到旅游目的地的重要规定、风俗习惯，安全避险措施，应急联络方式；</p>
+
+<p>3、按照合同约定，为旅游团队安排符合《导游人员管理条例》规定的持证导游人员；</p>
+
+<p>4、妥善保管旅游者提交的各种证件；</p>
+
+<p>5、为旅游者发放用固定格式书写、由旅游者填写的载明个人信息的安全保障卡（包括旅游者的姓名、血型、应急联络方式等）；</p>
+
+<p>6、对可能危及旅游者人身、财产安全的事项和须注意的问题，向旅游者做出真实的说明和明确的警示，并采取合理必要措施防止危害发生，旅游者人身、财产权益受到损害时，应当采取合理必要的保护和救助措施，避免旅游者人身、财产权益损失扩大；</p>
+
+<p>7、按照相关法规、规章的规定投保旅行社责任保险；</p>
+
+<p>8、提示旅游者购买个人旅游保险；</p>
+
+<p>9、应当按照合同约定安排购物和另行付费项目，不强迫或者变相强迫旅游者购物和参加另行付费项目；</p>
+
+<p>10、旅游者在《行程单》安排的购物场所所购物品系假冒伪劣商品时，旅游者提出索赔的，旅行社应当积极协助旅游者进行索赔，自索赔之日起超过60日，旅游者无法从购物点获得赔偿的，旅行社应当先行赔付；</p>
+
+<p>11、向旅游者提供合法的旅游费用发票；</p>
+
+<p>12、依法对旅游者个人信息保密；</p>
+
+<p>13、积极协调处理旅游者在旅游行程中的投诉，出现纠纷时，采取适当措施防止损失扩大；</p>
+
+<p>14、采用拼团方式出团的，签订合同的旅行社仍承担本合同约定的责任和义务。</p>
+
+<p>第八条&nbsp; 旅游者的权利</p>
+
+<p>1、要求旅行社按照合同和《行程单》兑现旅游行程服务；</p>
+
+<p>2、拒绝未经事先协商一致的转团、拼团行为和合同约定以外的购物及另行付费项目安排；</p>
+
+<p>3、在支付旅游费用时要求旅行社开具发票；</p>
+
+<p>4、在合法权益受到损害时向旅游、工商等部门投诉或者要求旅行社协助索赔；</p>
+
+<p>5、《中华人民共和国消费者权益保护法》和有关法律法规赋予消费者的其他权利。</p>
+
+<p>第九条 旅游者的义务</p>
+
+<p>1、如实填写《旅游报名表》、游客安全保障卡等各项内容，并对所填的内容承担责任，如实告知旅行社工作人员询问的与旅游活动相关的个人健康信息，所提供的联系方式须是经常使用或者能够及时联系到的；</p>
+
+<p>2、按照合同约定支付旅游费用；</p>
+
+<p>3、按照合同约定随团完成旅游行程，配合导游人员的统一管理，发生突发事件时，采取措施防止损失扩大；</p>
+
+<p>4、遵守国家和地方的法律法规和有关规定，不在旅游行程中从事违法活动，不参与色情、赌博和涉毒活动；</p>
+
+<p>5、遵守公共秩序和社会公德，尊重当地的民族风俗习惯；尊重旅游服务人员的人格，举止文明，不在景观、建筑上乱刻乱画，不随地吐痰、乱扔垃圾；</p>
+
+<p>6、妥善保管自己的行李物品，尤其是贵重物品；</p>
+
+<p>7、行程中发生纠纷，应当本着平等协商的原则解决，采取适当措施防止损失的扩大，不采取拒绝登机（车、船）等行为拖延行程或者脱团；</p>
+
+<p>8、自行安排活动期间，应当在自己能够控制风险的范围内选择活动项目，并对自己的安全负责；</p>
+
+<p>9、在合法权益受到损害要求旅行社协助索赔时，提供合法有效的凭据。</p>
+
+<p>&nbsp;</p>
+
+<p>第四章&nbsp; 合同的变更与转让</p>
+
+<p>&nbsp;</p>
+
+<p>第十条&nbsp; 合同的变更</p>
+
+<p>1、旅行社与旅游者双方协商一致，可以变更本合同约定的内容，但应当以书面形式由双方签字确认。由此增加的旅游费用及给对方造成的损失，由变更提出方承担；由此减少的旅游费用，旅行社应当退还旅游者。</p>
+
+<p>2、因不可抗力或者意外事件导致无法履行或者继续履行合同的，旅行社可以在征得旅游团队50%以上成员同意后对相应内容予以变更，因情况紧急无法征求意见或者经征求意见无法得到50%以上成员同意时，旅行社可以决定内容的变更，但应当就作出的决定提供必要的证明。</p>
+
+<p>3、在行前遇到不可抗力或者意外事件的，双方经协商可以取消行程或者延期出行。取消行程的，旅行社向旅游者全额退还旅游费用。已发生旅游费用的，应当由双方协商后合理分担。</p>
+
+<p>4、在行程中遇到不可抗力导致无法继续履行合同的，旅行社按本条第2款的约定实施变更后，将未发生的旅游费用退还旅游者，增加的旅游费用，应当由双方协商后合理分担。</p>
+
+<p>5、在行程中遇到意外事件导致无法继续履行合同的，旅行社按本条第2款的约定实施变更后，将未发生的旅游费用退还旅游者，因此增加的旅游费用由提出变更的一方承担（但因紧急避险所致的，由受益方承担）。</p>
+
+<p>第十一条&nbsp; 合同的转让</p>
+
+<p>经旅行社书面同意，旅游者可以将其在合同中的权利和义务转让给符合出游条件的第三人，因此增加的费用由旅游者承担，减少的费用退还旅游者。</p>
+
+<p>第十二条&nbsp; 不成团的安排</p>
+
+<p>当旅行社组团低于成团人数不能成团时，旅游者可以与旅行社就如下安排在本合同第二十二条中做出约定。</p>
+
+<p>1、转团：旅行社可以在保证所承诺的服务内容和标准不降低的前提下，经事先征得旅游者书面同意，将旅游者转至其他旅行社所组的旅游团队，并就受让出团的旅行社违反本合同约定的行为先行承担责任，再行追偿。旅游者和受让出团的旅行社另行签订合同的，本合同的权利义务终止。</p>
+
+<p>2、延期出团和改变线路出团：旅行社经征得旅游者书面同意，可以延期出团或者改变其他线路出团，需要时可以重新签订旅游合同，因此增加的费用由旅游者承担，减少的费用旅行社予以退还。</p>
+
+<p>&nbsp;</p>
+
+<p>第五章&nbsp; 合同的解除</p>
+
+<p>&nbsp;</p>
+
+<p>第十三条&nbsp; 不同意转团、延期出团和改变旅游线路的合同解除</p>
+
+<p>低于成团人数不能成团时，旅游者既不同意转团，也不同意延期和改变其他线路出团的，视为旅行社解除合同，按本合同第十四条、第十六条第1款相关约定处理。</p>
+
+<p>第十四条　行程前的合同解除</p>
+
+<p>旅游者和旅行社在行程前可以书面形式提出解除合同。在出发前7日(按出发日减去解除合同通知到达日的自然日之差计算，下同)以上（不含第7日）提出解除合同的，双方互不承担违约责任。旅行社提出解除合同的，全额退还旅游费用；旅游者提出解除合同，如已发生旅游费用的，应当扣除已发生的旅游费用。旅行社应当在解除合同的通知到达日起5个工作日内，向旅游者退还旅游费用。</p>
+
+<p>旅游者或者旅行社在出发前7日以内（含第7日，下同）提出解除合同的，由提出解除合同的一方承担违约责任。</p>
+
+<p>第十五条&nbsp; 行程中的合同解除</p>
+
+<p>1、旅游者未按约定时间到达约定集合出发地点，也未能在出发中途加入旅游团队的，视为旅游者解除合同，按照本合同第十七条第1款相关约定处理；</p>
+
+<p>2、旅游者在行程中脱团的，旅行社可以解除合同，旅游者不得要求旅行社退还旅游费用，给旅行社造成经济损失的，旅游者应当承担相应的赔偿责任。</p>
+
+<p>&nbsp;</p>
+
+<p>第六章&nbsp; 违约责任</p>
+
+<p>&nbsp;</p>
+
+<p>第十六条　&nbsp; 旅行社的违约责任</p>
+
+<p>1、旅行社在出发前7日以内（含第7日，下同）提出解除合同的，向旅游者退还全额旅游费用，并按下列标准向旅游者支付违约金：</p>
+
+<p>出发前7日至4日，支付旅游费用总额10%的违约金；</p>
+
+<p>出发前3日至1日，支付旅游费用总额15%的违约金；</p>
+
+<p>出发当日，支付旅游费用总额20%的违约金。</p>
+
+<p>如上述违约金不足以赔偿旅游者的实际损失，旅行社应当按实际损失对旅游者予以赔偿。</p>
+
+<p>旅行社应当在取消出团通知到达日起5个工作日内，向旅游者退还全额旅游费用，并支付上述违约金。</p>
+
+<p>2、旅行社未按合同约定提供服务，或者未经旅游者同意调整旅游行程（本合同第十条第2款规定的情况除外），造成项目减少、旅游时间缩短或者标准降低的，应当采取措施予以补救，未采取补救措施或者已采取补救措施但不足以弥补旅游者损失的，应当承担相应的赔偿责任。</p>
+
+<p>3、旅行社未经旅游者签字确认，安排本合同约定以外的另行付费项目的，应当承担自费项目的费用；擅自增加购物次数的，每次按旅游费用总额的10%向旅游者支付违约金；强迫或者变相强迫旅游者购物的，每次按旅游费用总额的20%向旅游者支付违约金。</p>
+
+<p>4、旅行社违反合同约定，中止对旅游者提供住宿、用餐、交通等旅游服务的，应当负担旅游者在被中止旅游服务期间所订的同等级别的住宿、用餐、交通等必要费用，并向旅游者支付旅游费用总额30%的违约金；如果因此给旅游者造成其他人身、财产损害的，还应当承担损害赔偿责任。</p>
+
+<p>5、旅行社未经旅游者同意，擅自将旅游者转团、拼团的，旅游者在出发前（不含当日）得知的，有权解除合同，旅行社全额退还已交旅游费用，并按旅游费用总额的15%支付违约金；旅游者在出发当日或者出发后得知的，旅行社应当按旅游费用总额的25%支付违约金，旅游者要求解除合同的，旅行社全额退还已交旅游费用；如违约金不足以赔偿旅游者的实际损失，旅行社应当按实际损失对旅游者予以赔偿。</p>
+
+<p>6、与旅游者出现纠纷时，旅行社应当采取积极措施防止损失扩大，否则应当就扩大的损失承担责任。</p>
+
+<p>7、旅行社委托的第三方违反本合同约定，视同旅行社违约，旅行社应当按照本合同约定承担违约责任。</p>
+
+<p>第十七条&nbsp; 旅游者的违约责任</p>
+
+<p>1、旅游者在出发前7日以内（含第7日，下同）提出解除合同的，应当按下列标准向旅行社支付业务损失费：</p>
+
+<p>出发前7日至4日，支付旅游费用总额50%；</p>
+
+<p>出发前3日至1日，支付旅游费用总额60%；</p>
+
+<p>出发当日，支付旅游费用总额80%。</p>
+
+<p>如按上述比例支付的业务损失费不足以赔偿旅行社的实际损失，旅游者应当按实际损失对旅行社予以赔偿，但最高额不应当超过旅游费用总额。</p>
+
+<p>旅行社在扣除上述业务损失费后，应当在旅游者退团通知到达日起5个工作日内向旅游者退还剩余旅游费用。</p>
+
+<p>2、旅游者未能按照本合同约定的时间足额支付旅游费用的，旅行社有权解除合同，并要求旅游者承担旅行社的业务损失费。</p>
+
+<p>3、旅游者因不听从旅行社及其导游的劝告而影响团队行程，给旅行社造成损失的，应当承担相应的赔偿责任。</p>
+
+<p>4、旅游者超出本合同约定的内容进行个人活动所造成的损失，由其自行承担。</p>
+
+<p>5、由于旅游者的过错，使旅行社遭受损害的，旅游者应当赔偿损失。</p>
+
+<p>6、与旅行社出现纠纷时，旅游者应当采取积极措施防止损失扩大，否则应当就扩大的损失承担责任。</p>
+
+<p>第十八条&nbsp; 其他责任</p>
+
+<p>1、由于第三方侵害等不可归责于旅行社的原因导致旅游者人身、财产权益受到损害的，旅行社不承担赔偿责任。但因旅行社不履行协助义务致使旅游者人身、财产权益损失扩大的，旅行社应当就扩大的损失承担赔偿责任。</p>
+
+<p>2、旅游者在自行安排活动期间人身、财产权益受到损害的，旅行社在事前已尽到必要警示说明义务且事后已尽到必要协助义务的，旅行社不承担赔偿责任</p>, 2019-01-15 18:36:30, 2019-01-15 18:36:30)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column '所属产品' in 'field list' (SQL: insert into `contract` (`name`, `所属产品`, `status`, `partyB`, `content`, `updated_at`, `created_at`) values (国内旅游合同, 1, 1, 北京小熊假期文化传媒有限公司, <p>为保证旅游服务质量，明确甲乙双方的权利与义务，依据我国《合同法》、《旅行社条例》等法律法规的规定，本着诚实信用、公平协商的原则，现就有关组团旅游事宜达成协议如下：</p>
+
+<p>第一条　本合同词语定义</p>
+
+<p>1、旅行社，指取得《旅行社业务经营许可证》和《企业法人营业执照》、经营旅游业务的企业法人。</p>
+
+<p>2、旅游者，指与旅行社签订国内旅游合同，参加国内旅游活动的内地居民或者团体。</p>
+
+<p>3、国内旅游服务，指旅行社依据《旅行社条例》等法律法规，组织旅游者在中华人民共和国境内（不含香港、澳门、台湾地区）旅游，代订公共交通客票，安排餐饮、住宿、游览等服务活动。</p>
+
+<p>4、旅游费用，指旅游者支付给旅行社，用于购买国内旅游服务的费用。</p>
+
+<p>旅游费用包括：</p>
+
+<p>(1)交通费；</p>
+
+<p>(2)住宿费；</p>
+
+<p>(3)餐费（不含酒水费）；</p>
+
+<p>(4)旅行社统一安排的景区景点的第一道门票费；</p>
+
+<p>(5)行程中安排的其他项目费用；</p>
+
+<p>(6)导游服务费和旅行社（含旅游目的地地接旅行社）的其他服务费用。</p>
+
+<p>旅游费用不包括：</p>
+
+<p>(1)旅游者投保的个人旅游保险费用；</p>
+
+<p>(2)合同约定需要旅游者另行付费项目的费用；</p>
+
+<p>(3)合同未约定由旅行社支付的费用，包括但不限于行程以外非合同约定活动项目所需的费用、自行安排活动期间发生的费用；</p>
+
+<p>(4)行程中发生的旅游者个人费用，包括但不限于交通工具上的非免费餐饮费、行李超重费，住宿期间的洗衣、电话、饮料及酒类费，个人娱乐费用，个人伤病医疗费，寻找个人遗失物品的费用及报酬，个人原因造成的赔偿费用。</p>
+
+<p>5、购物场所，指《旅游行程安排单》中安排的，专门或者主要以购物为活动内容的场所。</p>
+
+<p>6、自由活动，指《旅游行程安排单》中安排的自由活动。</p>
+
+<p>7、自行安排活动期间，指《旅游行程安排单》中安排的自由活动期间、旅游者不参加旅游行程活动期间、每日行程开始前、结束后旅游者离开住宿设施的个人活动期间、旅游者经导游同意暂时离团的个人活动期间。</p>
+
+<p>8、旅行社责任保险，指以旅行社因其组织的旅游活动对旅游者和受其委派并为旅游者提供服务的人员依法应当承担的赔偿责任为保险标的的保险。</p>
+
+<p>9、旅游者投保的个人旅游保险，指旅游者自己购买或者通过旅行社、航空机票代理点、景区等保险代理机构购买的以旅行期间自身的生命、身体、财产或者有关利益为保险标的的短期保险，包括但不限于航空意外险、旅游意外险、紧急救援保险、特殊项目意外险。</p>
+
+<p>10、离团，指团队旅游者经导游同意不随团队完成约定行程的行为。</p>
+
+<p>11、脱团，指团队旅游者未经导游同意脱离旅游团队，不随团队完成约定行程的行为。</p>
+
+<p>12、转团，指由于低于成团人数，旅行社征得旅游者书面同意，在出发前将旅游者转至其他旅行社所组的国内旅游团队的行为。</p>
+
+<p>13、拼团，指旅行社在保证所承诺的服务内容和标准不变的前提下，在签订合同时经旅游者同意，与其他旅行社招徕的旅游者拼成一个团统一安排旅游服务的行为。</p>
+
+<p>14、不可抗力，指不能预见、不能避免并不能克服的客观情况，包括但不限于因自然原因和社会原因引起的，如自然灾害、战争、恐怖活动、动乱、骚乱、罢工、突发公共卫生事件、政府行为。</p>
+
+<p>15、意外事件，指因当事人故意或者过失以外的偶然因素引发的事件，包括但不限于重大礼宾活动导致的交通堵塞、列车航班晚点、景点临时不开放。</p>
+
+<p>16、业务损失费，指旅行社因旅游者行前退团而产生的经济损失。包括乘坐飞机（车、船）等交通工具的费用（含预订金）、饭店住宿费用（含预订金）、旅游观光汽车的人均车租等已发生的实际费用。</p>
+
+<p>17、黄金周，指通过调休将春节、&ldquo;十一&rdquo;等3天法定节日与前后公休日相连形成通常为7天的公众节假日。</p>
+
+<p>&nbsp;</p>
+
+<p>第二章&nbsp; 合同的签订</p>
+
+<p>&nbsp;</p>
+
+<p>第二条&nbsp; &nbsp; &nbsp; 旅游行程安排单</p>
+
+<p>旅行社应当提供带团号的《旅游行程安排单》（以下简称《行程单》），经双方签字或者盖章确认后作为本合同的组成部分。《行程单》应当对如下内容作出明确的说明：</p>
+
+<p>（1）旅游行程的出发地、途经地、目的地，线路行程时间和具体安排（按自然日计算，含乘飞机、车、船等在途时间，不足24小时以一日计）；</p>
+
+<p>（2）旅游目的地地接旅行社的名称、地址、联系人和联系电话；</p>
+
+<p>（3）交通服务安排及其标准（明确交通工具及档次等级、出发时间以及是否需中转等信息）；</p>
+
+<p>（4）住宿服务安排及其标准（明确住宿饭店的名称、地点、星级，非星级饭店应当注明是否有空调、热水、独立卫生间等相关服务设施）；</p>
+
+<p>（5）用餐（早餐和正餐）服务安排及其标准（明确用餐次数、地点、标准）；</p>
+
+<p>（6）旅行社统一安排的游览项目的具体内容及时间（明确旅游线路内容包括景区点及游览项目名称等，景区点停留的最少时间）；</p>
+
+<p>（7）自由活动的时间和次数；</p>
+
+<p>（8）购物安排（旅行社安排的购物次数不超过行程日数的一半，并同时列明购物场所名称、停留的最多时间及主要商品等内容）；</p>
+
+<p>（9）行程安排的娱乐活动（明确娱乐活动的时间、地点和项目内容）；</p>
+
+<p>（10）另行付费项目（如有安排，旅行社应当在签约时向旅游者提供《另行付费项目表》，列明另行付费项目的价格、参加该另行付费项目的交通费和导游服务费等，由旅游者自愿选择并签字确认后作为本合同的组成部分；另行付费项目应当以不影响原计划行程为原则）；</p>
+
+<p>《行程单》用语须准确清晰，在表明服务标准用语中不应当出现&ldquo;准&times;星级&rdquo;、&ldquo;豪华&rdquo;、&ldquo;仅供参考&rdquo;、&ldquo;以&times;&times;为准&rdquo;、&ldquo;与&times;&times;同级&rdquo;等不确定性用语。</p>
+
+<p>第三条&nbsp; &nbsp;&nbsp; 签订合同</p>
+
+<p>旅游者应当认真阅读本合同条款、《行程单》和《另行付费项目表》，在旅游者理解本合同条款及有关附件后，旅行社和旅游者应当签订书面合同。</p>
+
+<p>第四条&nbsp; &nbsp;&nbsp; 旅游广告及宣传品</p>
+
+<p>旅行社的旅游广告及宣传品应当遵循诚实信用的原则，其内容符合《中华人民共和国合同法》要约规定的，视为本合同的组成部分，对旅行社和旅游者双方具有约束力。</p>
+
+<p>第五条　合同效力</p>
+
+<p>本合同一式两份，双方各持一份，具有同等法律效力，自双方当事人签字或者盖章之日起生效。</p>
+
+<p>&nbsp;</p>
+
+<p>第三章&nbsp; 合同双方的权利义务</p>
+
+<p>&nbsp;</p>
+
+<p>第六条&nbsp; &nbsp;&nbsp; 旅行社的权利</p>
+
+<p>1、根据旅游者的身体健康状况及相关条件决定是否接纳旅游者报名参团；</p>
+
+<p>2、核实旅游者提供的相关信息资料；</p>
+
+<p>3、按照合同约定向旅游者收取全额旅游费用；</p>
+
+<p>4、旅游团队遇紧急情况时，可以采取紧急避险措施并要求旅游者配合；</p>
+
+<p>5、拒绝旅游者提出的超出合同约定的不合理要求。</p>
+
+<p>第七条&nbsp; 旅行社的义务</p>
+
+<p>1、按照合同和《行程单》约定的内容和标准为旅游者提供服务；</p>
+
+<p>2、在出团前如实告知具体行程安排和有关具体事项，具体事项包括但不限于所到旅游目的地的重要规定、风俗习惯，安全避险措施，应急联络方式；</p>
+
+<p>3、按照合同约定，为旅游团队安排符合《导游人员管理条例》规定的持证导游人员；</p>
+
+<p>4、妥善保管旅游者提交的各种证件；</p>
+
+<p>5、为旅游者发放用固定格式书写、由旅游者填写的载明个人信息的安全保障卡（包括旅游者的姓名、血型、应急联络方式等）；</p>
+
+<p>6、对可能危及旅游者人身、财产安全的事项和须注意的问题，向旅游者做出真实的说明和明确的警示，并采取合理必要措施防止危害发生，旅游者人身、财产权益受到损害时，应当采取合理必要的保护和救助措施，避免旅游者人身、财产权益损失扩大；</p>
+
+<p>7、按照相关法规、规章的规定投保旅行社责任保险；</p>
+
+<p>8、提示旅游者购买个人旅游保险；</p>
+
+<p>9、应当按照合同约定安排购物和另行付费项目，不强迫或者变相强迫旅游者购物和参加另行付费项目；</p>
+
+<p>10、旅游者在《行程单》安排的购物场所所购物品系假冒伪劣商品时，旅游者提出索赔的，旅行社应当积极协助旅游者进行索赔，自索赔之日起超过60日，旅游者无法从购物点获得赔偿的，旅行社应当先行赔付；</p>
+
+<p>11、向旅游者提供合法的旅游费用发票；</p>
+
+<p>12、依法对旅游者个人信息保密；</p>
+
+<p>13、积极协调处理旅游者在旅游行程中的投诉，出现纠纷时，采取适当措施防止损失扩大；</p>
+
+<p>14、采用拼团方式出团的，签订合同的旅行社仍承担本合同约定的责任和义务。</p>
+
+<p>第八条&nbsp; 旅游者的权利</p>
+
+<p>1、要求旅行社按照合同和《行程单》兑现旅游行程服务；</p>
+
+<p>2、拒绝未经事先协商一致的转团、拼团行为和合同约定以外的购物及另行付费项目安排；</p>
+
+<p>3、在支付旅游费用时要求旅行社开具发票；</p>
+
+<p>4、在合法权益受到损害时向旅游、工商等部门投诉或者要求旅行社协助索赔；</p>
+
+<p>5、《中华人民共和国消费者权益保护法》和有关法律法规赋予消费者的其他权利。</p>
+
+<p>第九条 旅游者的义务</p>
+
+<p>1、如实填写《旅游报名表》、游客安全保障卡等各项内容，并对所填的内容承担责任，如实告知旅行社工作人员询问的与旅游活动相关的个人健康信息，所提供的联系方式须是经常使用或者能够及时联系到的；</p>
+
+<p>2、按照合同约定支付旅游费用；</p>
+
+<p>3、按照合同约定随团完成旅游行程，配合导游人员的统一管理，发生突发事件时，采取措施防止损失扩大；</p>
+
+<p>4、遵守国家和地方的法律法规和有关规定，不在旅游行程中从事违法活动，不参与色情、赌博和涉毒活动；</p>
+
+<p>5、遵守公共秩序和社会公德，尊重当地的民族风俗习惯；尊重旅游服务人员的人格，举止文明，不在景观、建筑上乱刻乱画，不随地吐痰、乱扔垃圾；</p>
+
+<p>6、妥善保管自己的行李物品，尤其是贵重物品；</p>
+
+<p>7、行程中发生纠纷，应当本着平等协商的原则解决，采取适当措施防止损失的扩大，不采取拒绝登机（车、船）等行为拖延行程或者脱团；</p>
+
+<p>8、自行安排活动期间，应当在自己能够控制风险的范围内选择活动项目，并对自己的安全负责；</p>
+
+<p>9、在合法权益受到损害要求旅行社协助索赔时，提供合法有效的凭据。</p>
+
+<p>&nbsp;</p>
+
+<p>第四章&nbsp; 合同的变更与转让</p>
+
+<p>&nbsp;</p>
+
+<p>第十条&nbsp; 合同的变更</p>
+
+<p>1、旅行社与旅游者双方协商一致，可以变更本合同约定的内容，但应当以书面形式由双方签字确认。由此增加的旅游费用及给对方造成的损失，由变更提出方承担；由此减少的旅游费用，旅行社应当退还旅游者。</p>
+
+<p>2、因不可抗力或者意外事件导致无法履行或者继续履行合同的，旅行社可以在征得旅游团队50%以上成员同意后对相应内容予以变更，因情况紧急无法征求意见或者经征求意见无法得到50%以上成员同意时，旅行社可以决定内容的变更，但应当就作出的决定提供必要的证明。</p>
+
+<p>3、在行前遇到不可抗力或者意外事件的，双方经协商可以取消行程或者延期出行。取消行程的，旅行社向旅游者全额退还旅游费用。已发生旅游费用的，应当由双方协商后合理分担。</p>
+
+<p>4、在行程中遇到不可抗力导致无法继续履行合同的，旅行社按本条第2款的约定实施变更后，将未发生的旅游费用退还旅游者，增加的旅游费用，应当由双方协商后合理分担。</p>
+
+<p>5、在行程中遇到意外事件导致无法继续履行合同的，旅行社按本条第2款的约定实施变更后，将未发生的旅游费用退还旅游者，因此增加的旅游费用由提出变更的一方承担（但因紧急避险所致的，由受益方承担）。</p>
+
+<p>第十一条&nbsp; 合同的转让</p>
+
+<p>经旅行社书面同意，旅游者可以将其在合同中的权利和义务转让给符合出游条件的第三人，因此增加的费用由旅游者承担，减少的费用退还旅游者。</p>
+
+<p>第十二条&nbsp; 不成团的安排</p>
+
+<p>当旅行社组团低于成团人数不能成团时，旅游者可以与旅行社就如下安排在本合同第二十二条中做出约定。</p>
+
+<p>1、转团：旅行社可以在保证所承诺的服务内容和标准不降低的前提下，经事先征得旅游者书面同意，将旅游者转至其他旅行社所组的旅游团队，并就受让出团的旅行社违反本合同约定的行为先行承担责任，再行追偿。旅游者和受让出团的旅行社另行签订合同的，本合同的权利义务终止。</p>
+
+<p>2、延期出团和改变线路出团：旅行社经征得旅游者书面同意，可以延期出团或者改变其他线路出团，需要时可以重新签订旅游合同，因此增加的费用由旅游者承担，减少的费用旅行社予以退还。</p>
+
+<p>&nbsp;</p>
+
+<p>第五章&nbsp; 合同的解除</p>
+
+<p>&nbsp;</p>
+
+<p>第十三条&nbsp; 不同意转团、延期出团和改变旅游线路的合同解除</p>
+
+<p>低于成团人数不能成团时，旅游者既不同意转团，也不同意延期和改变其他线路出团的，视为旅行社解除合同，按本合同第十四条、第十六条第1款相关约定处理。</p>
+
+<p>第十四条　行程前的合同解除</p>
+
+<p>旅游者和旅行社在行程前可以书面形式提出解除合同。在出发前7日(按出发日减去解除合同通知到达日的自然日之差计算，下同)以上（不含第7日）提出解除合同的，双方互不承担违约责任。旅行社提出解除合同的，全额退还旅游费用；旅游者提出解除合同，如已发生旅游费用的，应当扣除已发生的旅游费用。旅行社应当在解除合同的通知到达日起5个工作日内，向旅游者退还旅游费用。</p>
+
+<p>旅游者或者旅行社在出发前7日以内（含第7日，下同）提出解除合同的，由提出解除合同的一方承担违约责任。</p>
+
+<p>第十五条&nbsp; 行程中的合同解除</p>
+
+<p>1、旅游者未按约定时间到达约定集合出发地点，也未能在出发中途加入旅游团队的，视为旅游者解除合同，按照本合同第十七条第1款相关约定处理；</p>
+
+<p>2、旅游者在行程中脱团的，旅行社可以解除合同，旅游者不得要求旅行社退还旅游费用，给旅行社造成经济损失的，旅游者应当承担相应的赔偿责任。</p>
+
+<p>&nbsp;</p>
+
+<p>第六章&nbsp; 违约责任</p>
+
+<p>&nbsp;</p>
+
+<p>第十六条　&nbsp; 旅行社的违约责任</p>
+
+<p>1、旅行社在出发前7日以内（含第7日，下同）提出解除合同的，向旅游者退还全额旅游费用，并按下列标准向旅游者支付违约金：</p>
+
+<p>出发前7日至4日，支付旅游费用总额10%的违约金；</p>
+
+<p>出发前3日至1日，支付旅游费用总额15%的违约金；</p>
+
+<p>出发当日，支付旅游费用总额20%的违约金。</p>
+
+<p>如上述违约金不足以赔偿旅游者的实际损失，旅行社应当按实际损失对旅游者予以赔偿。</p>
+
+<p>旅行社应当在取消出团通知到达日起5个工作日内，向旅游者退还全额旅游费用，并支付上述违约金。</p>
+
+<p>2、旅行社未按合同约定提供服务，或者未经旅游者同意调整旅游行程（本合同第十条第2款规定的情况除外），造成项目减少、旅游时间缩短或者标准降低的，应当采取措施予以补救，未采取补救措施或者已采取补救措施但不足以弥补旅游者损失的，应当承担相应的赔偿责任。</p>
+
+<p>3、旅行社未经旅游者签字确认，安排本合同约定以外的另行付费项目的，应当承担自费项目的费用；擅自增加购物次数的，每次按旅游费用总额的10%向旅游者支付违约金；强迫或者变相强迫旅游者购物的，每次按旅游费用总额的20%向旅游者支付违约金。</p>
+
+<p>4、旅行社违反合同约定，中止对旅游者提供住宿、用餐、交通等旅游服务的，应当负担旅游者在被中止旅游服务期间所订的同等级别的住宿、用餐、交通等必要费用，并向旅游者支付旅游费用总额30%的违约金；如果因此给旅游者造成其他人身、财产损害的，还应当承担损害赔偿责任。</p>
+
+<p>5、旅行社未经旅游者同意，擅自将旅游者转团、拼团的，旅游者在出发前（不含当日）得知的，有权解除合同，旅行社全额退还已交旅游费用，并按旅游费用总额的15%支付违约金；旅游者在出发当日或者出发后得知的，旅行社应当按旅游费用总额的25%支付违约金，旅游者要求解除合同的，旅行社全额退还已交旅游费用；如违约金不足以赔偿旅游者的实际损失，旅行社应当按实际损失对旅游者予以赔偿。</p>
+
+<p>6、与旅游者出现纠纷时，旅行社应当采取积极措施防止损失扩大，否则应当就扩大的损失承担责任。</p>
+
+<p>7、旅行社委托的第三方违反本合同约定，视同旅行社违约，旅行社应当按照本合同约定承担违约责任。</p>
+
+<p>第十七条&nbsp; 旅游者的违约责任</p>
+
+<p>1、旅游者在出发前7日以内（含第7日，下同）提出解除合同的，应当按下列标准向旅行社支付业务损失费：</p>
+
+<p>出发前7日至4日，支付旅游费用总额50%；</p>
+
+<p>出发前3日至1日，支付旅游费用总额60%；</p>
+
+<p>出发当日，支付旅游费用总额80%。</p>
+
+<p>如按上述比例支付的业务损失费不足以赔偿旅行社的实际损失，旅游者应当按实际损失对旅行社予以赔偿，但最高额不应当超过旅游费用总额。</p>
+
+<p>旅行社在扣除上述业务损失费后，应当在旅游者退团通知到达日起5个工作日内向旅游者退还剩余旅游费用。</p>
+
+<p>2、旅游者未能按照本合同约定的时间足额支付旅游费用的，旅行社有权解除合同，并要求旅游者承担旅行社的业务损失费。</p>
+
+<p>3、旅游者因不听从旅行社及其导游的劝告而影响团队行程，给旅行社造成损失的，应当承担相应的赔偿责任。</p>
+
+<p>4、旅游者超出本合同约定的内容进行个人活动所造成的损失，由其自行承担。</p>
+
+<p>5、由于旅游者的过错，使旅行社遭受损害的，旅游者应当赔偿损失。</p>
+
+<p>6、与旅行社出现纠纷时，旅游者应当采取积极措施防止损失扩大，否则应当就扩大的损失承担责任。</p>
+
+<p>第十八条&nbsp; 其他责任</p>
+
+<p>1、由于第三方侵害等不可归责于旅行社的原因导致旅游者人身、财产权益受到损害的，旅行社不承担赔偿责任。但因旅行社不履行协助义务致使旅游者人身、财产权益损失扩大的，旅行社应当就扩大的损失承担赔偿责任。</p>
+
+<p>2、旅游者在自行安排活动期间人身、财产权益受到损害的，旅行社在事前已尽到必要警示说明义务且事后已尽到必要协助义务的，旅行社不承担赔偿责任</p>, 2019-01-15 18:36:30, 2019-01-15 18:36:30)) at /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, Doctrine\\DBAL\\Driver\\PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column '所属产品' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:63, PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column '所属产品' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:61)
+[stacktrace]
+#0 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `co...', Array, Object(Closure))
+#1 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('insert into `co...', Array, Object(Closure))
+#2 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `co...', Array)
+#3 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `co...', Array)
+#4 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2628): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `co...', Array, 'id')
+#5 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1318): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(823): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(788): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(651): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(366): Illuminate\\Database\\Eloquent\\Model->save()
+#10 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php(29): Encore\\Admin\\Form->Encore\\Admin\\{closure}(Object(Illuminate\\Database\\MySqlConnection))
+#11 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(327): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#12 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\DatabaseManager->__call('transaction', Array)
+#13 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(369): Illuminate\\Support\\Facades\\Facade::__callStatic('transaction', Array)
+#14 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Controllers/HasResourceActions.php(26): Encore\\Admin\\Form->store()
+#15 [internal function]: App\\Admin\\Controllers\\ContractController->store()
+#16 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#17 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#18 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Admin\\Controllers\\ContractController), 'store')
+#19 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#20 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Routing\\Route->run()
+#21 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Permission.php(42): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Permission->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Bootstrap.php(36): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Bootstrap->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/LogOperation.php(38): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\LogOperation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Pjax.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Pjax->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Authenticate.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#58 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#59 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#60 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#61 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/zhaoyejin/www/laravel_shop/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#73 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#74 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#79 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#80 /Users/zhaoyejin/www/laravel_shop/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#81 {main}
+"} 
+[2019-01-15 18:36:55] local.ERROR: SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value (SQL: insert into `contract` (`name`, `status`, `partyB`, `content`, `updated_at`, `created_at`) values (国内旅游合同, 1, 北京小熊假期文化传媒有限公司, <p>为保证旅游服务质量，明确甲乙双方的权利与义务，依据我国《合同法》、《旅行社条例》等法律法规的规定，本着诚实信用、公平协商的原则，现就有关组团旅游事宜达成协议如下：</p>
+
+<p>第一条　本合同词语定义</p>
+
+<p>1、旅行社，指取得《旅行社业务经营许可证》和《企业法人营业执照》、经营旅游业务的企业法人。</p>
+
+<p>2、旅游者，指与旅行社签订国内旅游合同，参加国内旅游活动的内地居民或者团体。</p>
+
+<p>3、国内旅游服务，指旅行社依据《旅行社条例》等法律法规，组织旅游者在中华人民共和国境内（不含香港、澳门、台湾地区）旅游，代订公共交通客票，安排餐饮、住宿、游览等服务活动。</p>
+
+<p>4、旅游费用，指旅游者支付给旅行社，用于购买国内旅游服务的费用。</p>
+
+<p>旅游费用包括：</p>
+
+<p>(1)交通费；</p>
+
+<p>(2)住宿费；</p>
+
+<p>(3)餐费（不含酒水费）；</p>
+
+<p>(4)旅行社统一安排的景区景点的第一道门票费；</p>
+
+<p>(5)行程中安排的其他项目费用；</p>
+
+<p>(6)导游服务费和旅行社（含旅游目的地地接旅行社）的其他服务费用。</p>
+
+<p>旅游费用不包括：</p>
+
+<p>(1)旅游者投保的个人旅游保险费用；</p>
+
+<p>(2)合同约定需要旅游者另行付费项目的费用；</p>
+
+<p>(3)合同未约定由旅行社支付的费用，包括但不限于行程以外非合同约定活动项目所需的费用、自行安排活动期间发生的费用；</p>
+
+<p>(4)行程中发生的旅游者个人费用，包括但不限于交通工具上的非免费餐饮费、行李超重费，住宿期间的洗衣、电话、饮料及酒类费，个人娱乐费用，个人伤病医疗费，寻找个人遗失物品的费用及报酬，个人原因造成的赔偿费用。</p>
+
+<p>5、购物场所，指《旅游行程安排单》中安排的，专门或者主要以购物为活动内容的场所。</p>
+
+<p>6、自由活动，指《旅游行程安排单》中安排的自由活动。</p>
+
+<p>7、自行安排活动期间，指《旅游行程安排单》中安排的自由活动期间、旅游者不参加旅游行程活动期间、每日行程开始前、结束后旅游者离开住宿设施的个人活动期间、旅游者经导游同意暂时离团的个人活动期间。</p>
+
+<p>8、旅行社责任保险，指以旅行社因其组织的旅游活动对旅游者和受其委派并为旅游者提供服务的人员依法应当承担的赔偿责任为保险标的的保险。</p>
+
+<p>9、旅游者投保的个人旅游保险，指旅游者自己购买或者通过旅行社、航空机票代理点、景区等保险代理机构购买的以旅行期间自身的生命、身体、财产或者有关利益为保险标的的短期保险，包括但不限于航空意外险、旅游意外险、紧急救援保险、特殊项目意外险。</p>
+
+<p>10、离团，指团队旅游者经导游同意不随团队完成约定行程的行为。</p>
+
+<p>11、脱团，指团队旅游者未经导游同意脱离旅游团队，不随团队完成约定行程的行为。</p>
+
+<p>12、转团，指由于低于成团人数，旅行社征得旅游者书面同意，在出发前将旅游者转至其他旅行社所组的国内旅游团队的行为。</p>
+
+<p>13、拼团，指旅行社在保证所承诺的服务内容和标准不变的前提下，在签订合同时经旅游者同意，与其他旅行社招徕的旅游者拼成一个团统一安排旅游服务的行为。</p>
+
+<p>14、不可抗力，指不能预见、不能避免并不能克服的客观情况，包括但不限于因自然原因和社会原因引起的，如自然灾害、战争、恐怖活动、动乱、骚乱、罢工、突发公共卫生事件、政府行为。</p>
+
+<p>15、意外事件，指因当事人故意或者过失以外的偶然因素引发的事件，包括但不限于重大礼宾活动导致的交通堵塞、列车航班晚点、景点临时不开放。</p>
+
+<p>16、业务损失费，指旅行社因旅游者行前退团而产生的经济损失。包括乘坐飞机（车、船）等交通工具的费用（含预订金）、饭店住宿费用（含预订金）、旅游观光汽车的人均车租等已发生的实际费用。</p>
+
+<p>17、黄金周，指通过调休将春节、&ldquo;十一&rdquo;等3天法定节日与前后公休日相连形成通常为7天的公众节假日。</p>
+
+<p>&nbsp;</p>
+
+<p>第二章&nbsp; 合同的签订</p>
+
+<p>&nbsp;</p>
+
+<p>第二条&nbsp; &nbsp; &nbsp; 旅游行程安排单</p>
+
+<p>旅行社应当提供带团号的《旅游行程安排单》（以下简称《行程单》），经双方签字或者盖章确认后作为本合同的组成部分。《行程单》应当对如下内容作出明确的说明：</p>
+
+<p>（1）旅游行程的出发地、途经地、目的地，线路行程时间和具体安排（按自然日计算，含乘飞机、车、船等在途时间，不足24小时以一日计）；</p>
+
+<p>（2）旅游目的地地接旅行社的名称、地址、联系人和联系电话；</p>
+
+<p>（3）交通服务安排及其标准（明确交通工具及档次等级、出发时间以及是否需中转等信息）；</p>
+
+<p>（4）住宿服务安排及其标准（明确住宿饭店的名称、地点、星级，非星级饭店应当注明是否有空调、热水、独立卫生间等相关服务设施）；</p>
+
+<p>（5）用餐（早餐和正餐）服务安排及其标准（明确用餐次数、地点、标准）；</p>
+
+<p>（6）旅行社统一安排的游览项目的具体内容及时间（明确旅游线路内容包括景区点及游览项目名称等，景区点停留的最少时间）；</p>
+
+<p>（7）自由活动的时间和次数；</p>
+
+<p>（8）购物安排（旅行社安排的购物次数不超过行程日数的一半，并同时列明购物场所名称、停留的最多时间及主要商品等内容）；</p>
+
+<p>（9）行程安排的娱乐活动（明确娱乐活动的时间、地点和项目内容）；</p>
+
+<p>（10）另行付费项目（如有安排，旅行社应当在签约时向旅游者提供《另行付费项目表》，列明另行付费项目的价格、参加该另行付费项目的交通费和导游服务费等，由旅游者自愿选择并签字确认后作为本合同的组成部分；另行付费项目应当以不影响原计划行程为原则）；</p>
+
+<p>《行程单》用语须准确清晰，在表明服务标准用语中不应当出现&ldquo;准&times;星级&rdquo;、&ldquo;豪华&rdquo;、&ldquo;仅供参考&rdquo;、&ldquo;以&times;&times;为准&rdquo;、&ldquo;与&times;&times;同级&rdquo;等不确定性用语。</p>
+
+<p>第三条&nbsp; &nbsp;&nbsp; 签订合同</p>
+
+<p>旅游者应当认真阅读本合同条款、《行程单》和《另行付费项目表》，在旅游者理解本合同条款及有关附件后，旅行社和旅游者应当签订书面合同。</p>
+
+<p>第四条&nbsp; &nbsp;&nbsp; 旅游广告及宣传品</p>
+
+<p>旅行社的旅游广告及宣传品应当遵循诚实信用的原则，其内容符合《中华人民共和国合同法》要约规定的，视为本合同的组成部分，对旅行社和旅游者双方具有约束力。</p>
+
+<p>第五条　合同效力</p>
+
+<p>本合同一式两份，双方各持一份，具有同等法律效力，自双方当事人签字或者盖章之日起生效。</p>
+
+<p>&nbsp;</p>
+
+<p>第三章&nbsp; 合同双方的权利义务</p>
+
+<p>&nbsp;</p>
+
+<p>第六条&nbsp; &nbsp;&nbsp; 旅行社的权利</p>
+
+<p>1、根据旅游者的身体健康状况及相关条件决定是否接纳旅游者报名参团；</p>
+
+<p>2、核实旅游者提供的相关信息资料；</p>
+
+<p>3、按照合同约定向旅游者收取全额旅游费用；</p>
+
+<p>4、旅游团队遇紧急情况时，可以采取紧急避险措施并要求旅游者配合；</p>
+
+<p>5、拒绝旅游者提出的超出合同约定的不合理要求。</p>
+
+<p>第七条&nbsp; 旅行社的义务</p>
+
+<p>1、按照合同和《行程单》约定的内容和标准为旅游者提供服务；</p>
+
+<p>2、在出团前如实告知具体行程安排和有关具体事项，具体事项包括但不限于所到旅游目的地的重要规定、风俗习惯，安全避险措施，应急联络方式；</p>
+
+<p>3、按照合同约定，为旅游团队安排符合《导游人员管理条例》规定的持证导游人员；</p>
+
+<p>4、妥善保管旅游者提交的各种证件；</p>
+
+<p>5、为旅游者发放用固定格式书写、由旅游者填写的载明个人信息的安全保障卡（包括旅游者的姓名、血型、应急联络方式等）；</p>
+
+<p>6、对可能危及旅游者人身、财产安全的事项和须注意的问题，向旅游者做出真实的说明和明确的警示，并采取合理必要措施防止危害发生，旅游者人身、财产权益受到损害时，应当采取合理必要的保护和救助措施，避免旅游者人身、财产权益损失扩大；</p>
+
+<p>7、按照相关法规、规章的规定投保旅行社责任保险；</p>
+
+<p>8、提示旅游者购买个人旅游保险；</p>
+
+<p>9、应当按照合同约定安排购物和另行付费项目，不强迫或者变相强迫旅游者购物和参加另行付费项目；</p>
+
+<p>10、旅游者在《行程单》安排的购物场所所购物品系假冒伪劣商品时，旅游者提出索赔的，旅行社应当积极协助旅游者进行索赔，自索赔之日起超过60日，旅游者无法从购物点获得赔偿的，旅行社应当先行赔付；</p>
+
+<p>11、向旅游者提供合法的旅游费用发票；</p>
+
+<p>12、依法对旅游者个人信息保密；</p>
+
+<p>13、积极协调处理旅游者在旅游行程中的投诉，出现纠纷时，采取适当措施防止损失扩大；</p>
+
+<p>14、采用拼团方式出团的，签订合同的旅行社仍承担本合同约定的责任和义务。</p>
+
+<p>第八条&nbsp; 旅游者的权利</p>
+
+<p>1、要求旅行社按照合同和《行程单》兑现旅游行程服务；</p>
+
+<p>2、拒绝未经事先协商一致的转团、拼团行为和合同约定以外的购物及另行付费项目安排；</p>
+
+<p>3、在支付旅游费用时要求旅行社开具发票；</p>
+
+<p>4、在合法权益受到损害时向旅游、工商等部门投诉或者要求旅行社协助索赔；</p>
+
+<p>5、《中华人民共和国消费者权益保护法》和有关法律法规赋予消费者的其他权利。</p>
+
+<p>第九条 旅游者的义务</p>
+
+<p>1、如实填写《旅游报名表》、游客安全保障卡等各项内容，并对所填的内容承担责任，如实告知旅行社工作人员询问的与旅游活动相关的个人健康信息，所提供的联系方式须是经常使用或者能够及时联系到的；</p>
+
+<p>2、按照合同约定支付旅游费用；</p>
+
+<p>3、按照合同约定随团完成旅游行程，配合导游人员的统一管理，发生突发事件时，采取措施防止损失扩大；</p>
+
+<p>4、遵守国家和地方的法律法规和有关规定，不在旅游行程中从事违法活动，不参与色情、赌博和涉毒活动；</p>
+
+<p>5、遵守公共秩序和社会公德，尊重当地的民族风俗习惯；尊重旅游服务人员的人格，举止文明，不在景观、建筑上乱刻乱画，不随地吐痰、乱扔垃圾；</p>
+
+<p>6、妥善保管自己的行李物品，尤其是贵重物品；</p>
+
+<p>7、行程中发生纠纷，应当本着平等协商的原则解决，采取适当措施防止损失的扩大，不采取拒绝登机（车、船）等行为拖延行程或者脱团；</p>
+
+<p>8、自行安排活动期间，应当在自己能够控制风险的范围内选择活动项目，并对自己的安全负责；</p>
+
+<p>9、在合法权益受到损害要求旅行社协助索赔时，提供合法有效的凭据。</p>
+
+<p>&nbsp;</p>
+
+<p>第四章&nbsp; 合同的变更与转让</p>
+
+<p>&nbsp;</p>
+
+<p>第十条&nbsp; 合同的变更</p>
+
+<p>1、旅行社与旅游者双方协商一致，可以变更本合同约定的内容，但应当以书面形式由双方签字确认。由此增加的旅游费用及给对方造成的损失，由变更提出方承担；由此减少的旅游费用，旅行社应当退还旅游者。</p>
+
+<p>2、因不可抗力或者意外事件导致无法履行或者继续履行合同的，旅行社可以在征得旅游团队50%以上成员同意后对相应内容予以变更，因情况紧急无法征求意见或者经征求意见无法得到50%以上成员同意时，旅行社可以决定内容的变更，但应当就作出的决定提供必要的证明。</p>
+
+<p>3、在行前遇到不可抗力或者意外事件的，双方经协商可以取消行程或者延期出行。取消行程的，旅行社向旅游者全额退还旅游费用。已发生旅游费用的，应当由双方协商后合理分担。</p>
+
+<p>4、在行程中遇到不可抗力导致无法继续履行合同的，旅行社按本条第2款的约定实施变更后，将未发生的旅游费用退还旅游者，增加的旅游费用，应当由双方协商后合理分担。</p>
+
+<p>5、在行程中遇到意外事件导致无法继续履行合同的，旅行社按本条第2款的约定实施变更后，将未发生的旅游费用退还旅游者，因此增加的旅游费用由提出变更的一方承担（但因紧急避险所致的，由受益方承担）。</p>
+
+<p>第十一条&nbsp; 合同的转让</p>
+
+<p>经旅行社书面同意，旅游者可以将其在合同中的权利和义务转让给符合出游条件的第三人，因此增加的费用由旅游者承担，减少的费用退还旅游者。</p>
+
+<p>第十二条&nbsp; 不成团的安排</p>
+
+<p>当旅行社组团低于成团人数不能成团时，旅游者可以与旅行社就如下安排在本合同第二十二条中做出约定。</p>
+
+<p>1、转团：旅行社可以在保证所承诺的服务内容和标准不降低的前提下，经事先征得旅游者书面同意，将旅游者转至其他旅行社所组的旅游团队，并就受让出团的旅行社违反本合同约定的行为先行承担责任，再行追偿。旅游者和受让出团的旅行社另行签订合同的，本合同的权利义务终止。</p>
+
+<p>2、延期出团和改变线路出团：旅行社经征得旅游者书面同意，可以延期出团或者改变其他线路出团，需要时可以重新签订旅游合同，因此增加的费用由旅游者承担，减少的费用旅行社予以退还。</p>
+
+<p>&nbsp;</p>
+
+<p>第五章&nbsp; 合同的解除</p>
+
+<p>&nbsp;</p>
+
+<p>第十三条&nbsp; 不同意转团、延期出团和改变旅游线路的合同解除</p>
+
+<p>低于成团人数不能成团时，旅游者既不同意转团，也不同意延期和改变其他线路出团的，视为旅行社解除合同，按本合同第十四条、第十六条第1款相关约定处理。</p>
+
+<p>第十四条　行程前的合同解除</p>
+
+<p>旅游者和旅行社在行程前可以书面形式提出解除合同。在出发前7日(按出发日减去解除合同通知到达日的自然日之差计算，下同)以上（不含第7日）提出解除合同的，双方互不承担违约责任。旅行社提出解除合同的，全额退还旅游费用；旅游者提出解除合同，如已发生旅游费用的，应当扣除已发生的旅游费用。旅行社应当在解除合同的通知到达日起5个工作日内，向旅游者退还旅游费用。</p>
+
+<p>旅游者或者旅行社在出发前7日以内（含第7日，下同）提出解除合同的，由提出解除合同的一方承担违约责任。</p>
+
+<p>第十五条&nbsp; 行程中的合同解除</p>
+
+<p>1、旅游者未按约定时间到达约定集合出发地点，也未能在出发中途加入旅游团队的，视为旅游者解除合同，按照本合同第十七条第1款相关约定处理；</p>
+
+<p>2、旅游者在行程中脱团的，旅行社可以解除合同，旅游者不得要求旅行社退还旅游费用，给旅行社造成经济损失的，旅游者应当承担相应的赔偿责任。</p>
+
+<p>&nbsp;</p>
+
+<p>第六章&nbsp; 违约责任</p>
+
+<p>&nbsp;</p>
+
+<p>第十六条　&nbsp; 旅行社的违约责任</p>
+
+<p>1、旅行社在出发前7日以内（含第7日，下同）提出解除合同的，向旅游者退还全额旅游费用，并按下列标准向旅游者支付违约金：</p>
+
+<p>出发前7日至4日，支付旅游费用总额10%的违约金；</p>
+
+<p>出发前3日至1日，支付旅游费用总额15%的违约金；</p>
+
+<p>出发当日，支付旅游费用总额20%的违约金。</p>
+
+<p>如上述违约金不足以赔偿旅游者的实际损失，旅行社应当按实际损失对旅游者予以赔偿。</p>
+
+<p>旅行社应当在取消出团通知到达日起5个工作日内，向旅游者退还全额旅游费用，并支付上述违约金。</p>
+
+<p>2、旅行社未按合同约定提供服务，或者未经旅游者同意调整旅游行程（本合同第十条第2款规定的情况除外），造成项目减少、旅游时间缩短或者标准降低的，应当采取措施予以补救，未采取补救措施或者已采取补救措施但不足以弥补旅游者损失的，应当承担相应的赔偿责任。</p>
+
+<p>3、旅行社未经旅游者签字确认，安排本合同约定以外的另行付费项目的，应当承担自费项目的费用；擅自增加购物次数的，每次按旅游费用总额的10%向旅游者支付违约金；强迫或者变相强迫旅游者购物的，每次按旅游费用总额的20%向旅游者支付违约金。</p>
+
+<p>4、旅行社违反合同约定，中止对旅游者提供住宿、用餐、交通等旅游服务的，应当负担旅游者在被中止旅游服务期间所订的同等级别的住宿、用餐、交通等必要费用，并向旅游者支付旅游费用总额30%的违约金；如果因此给旅游者造成其他人身、财产损害的，还应当承担损害赔偿责任。</p>
+
+<p>5、旅行社未经旅游者同意，擅自将旅游者转团、拼团的，旅游者在出发前（不含当日）得知的，有权解除合同，旅行社全额退还已交旅游费用，并按旅游费用总额的15%支付违约金；旅游者在出发当日或者出发后得知的，旅行社应当按旅游费用总额的25%支付违约金，旅游者要求解除合同的，旅行社全额退还已交旅游费用；如违约金不足以赔偿旅游者的实际损失，旅行社应当按实际损失对旅游者予以赔偿。</p>
+
+<p>6、与旅游者出现纠纷时，旅行社应当采取积极措施防止损失扩大，否则应当就扩大的损失承担责任。</p>
+
+<p>7、旅行社委托的第三方违反本合同约定，视同旅行社违约，旅行社应当按照本合同约定承担违约责任。</p>
+
+<p>第十七条&nbsp; 旅游者的违约责任</p>
+
+<p>1、旅游者在出发前7日以内（含第7日，下同）提出解除合同的，应当按下列标准向旅行社支付业务损失费：</p>
+
+<p>出发前7日至4日，支付旅游费用总额50%；</p>
+
+<p>出发前3日至1日，支付旅游费用总额60%；</p>
+
+<p>出发当日，支付旅游费用总额80%。</p>
+
+<p>如按上述比例支付的业务损失费不足以赔偿旅行社的实际损失，旅游者应当按实际损失对旅行社予以赔偿，但最高额不应当超过旅游费用总额。</p>
+
+<p>旅行社在扣除上述业务损失费后，应当在旅游者退团通知到达日起5个工作日内向旅游者退还剩余旅游费用。</p>
+
+<p>2、旅游者未能按照本合同约定的时间足额支付旅游费用的，旅行社有权解除合同，并要求旅游者承担旅行社的业务损失费。</p>
+
+<p>3、旅游者因不听从旅行社及其导游的劝告而影响团队行程，给旅行社造成损失的，应当承担相应的赔偿责任。</p>
+
+<p>4、旅游者超出本合同约定的内容进行个人活动所造成的损失，由其自行承担。</p>
+
+<p>5、由于旅游者的过错，使旅行社遭受损害的，旅游者应当赔偿损失。</p>
+
+<p>6、与旅行社出现纠纷时，旅游者应当采取积极措施防止损失扩大，否则应当就扩大的损失承担责任。</p>
+
+<p>第十八条&nbsp; 其他责任</p>
+
+<p>1、由于第三方侵害等不可归责于旅行社的原因导致旅游者人身、财产权益受到损害的，旅行社不承担赔偿责任。但因旅行社不履行协助义务致使旅游者人身、财产权益损失扩大的，旅行社应当就扩大的损失承担赔偿责任。</p>
+
+<p>2、旅游者在自行安排活动期间人身、财产权益受到损害的，旅行社在事前已尽到必要警示说明义务且事后已尽到必要协助义务的，旅行社不承担赔偿责任</p>, 2019-01-15 18:36:55, 2019-01-15 18:36:55)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value (SQL: insert into `contract` (`name`, `status`, `partyB`, `content`, `updated_at`, `created_at`) values (国内旅游合同, 1, 北京小熊假期文化传媒有限公司, <p>为保证旅游服务质量，明确甲乙双方的权利与义务，依据我国《合同法》、《旅行社条例》等法律法规的规定，本着诚实信用、公平协商的原则，现就有关组团旅游事宜达成协议如下：</p>
+
+<p>第一条　本合同词语定义</p>
+
+<p>1、旅行社，指取得《旅行社业务经营许可证》和《企业法人营业执照》、经营旅游业务的企业法人。</p>
+
+<p>2、旅游者，指与旅行社签订国内旅游合同，参加国内旅游活动的内地居民或者团体。</p>
+
+<p>3、国内旅游服务，指旅行社依据《旅行社条例》等法律法规，组织旅游者在中华人民共和国境内（不含香港、澳门、台湾地区）旅游，代订公共交通客票，安排餐饮、住宿、游览等服务活动。</p>
+
+<p>4、旅游费用，指旅游者支付给旅行社，用于购买国内旅游服务的费用。</p>
+
+<p>旅游费用包括：</p>
+
+<p>(1)交通费；</p>
+
+<p>(2)住宿费；</p>
+
+<p>(3)餐费（不含酒水费）；</p>
+
+<p>(4)旅行社统一安排的景区景点的第一道门票费；</p>
+
+<p>(5)行程中安排的其他项目费用；</p>
+
+<p>(6)导游服务费和旅行社（含旅游目的地地接旅行社）的其他服务费用。</p>
+
+<p>旅游费用不包括：</p>
+
+<p>(1)旅游者投保的个人旅游保险费用；</p>
+
+<p>(2)合同约定需要旅游者另行付费项目的费用；</p>
+
+<p>(3)合同未约定由旅行社支付的费用，包括但不限于行程以外非合同约定活动项目所需的费用、自行安排活动期间发生的费用；</p>
+
+<p>(4)行程中发生的旅游者个人费用，包括但不限于交通工具上的非免费餐饮费、行李超重费，住宿期间的洗衣、电话、饮料及酒类费，个人娱乐费用，个人伤病医疗费，寻找个人遗失物品的费用及报酬，个人原因造成的赔偿费用。</p>
+
+<p>5、购物场所，指《旅游行程安排单》中安排的，专门或者主要以购物为活动内容的场所。</p>
+
+<p>6、自由活动，指《旅游行程安排单》中安排的自由活动。</p>
+
+<p>7、自行安排活动期间，指《旅游行程安排单》中安排的自由活动期间、旅游者不参加旅游行程活动期间、每日行程开始前、结束后旅游者离开住宿设施的个人活动期间、旅游者经导游同意暂时离团的个人活动期间。</p>
+
+<p>8、旅行社责任保险，指以旅行社因其组织的旅游活动对旅游者和受其委派并为旅游者提供服务的人员依法应当承担的赔偿责任为保险标的的保险。</p>
+
+<p>9、旅游者投保的个人旅游保险，指旅游者自己购买或者通过旅行社、航空机票代理点、景区等保险代理机构购买的以旅行期间自身的生命、身体、财产或者有关利益为保险标的的短期保险，包括但不限于航空意外险、旅游意外险、紧急救援保险、特殊项目意外险。</p>
+
+<p>10、离团，指团队旅游者经导游同意不随团队完成约定行程的行为。</p>
+
+<p>11、脱团，指团队旅游者未经导游同意脱离旅游团队，不随团队完成约定行程的行为。</p>
+
+<p>12、转团，指由于低于成团人数，旅行社征得旅游者书面同意，在出发前将旅游者转至其他旅行社所组的国内旅游团队的行为。</p>
+
+<p>13、拼团，指旅行社在保证所承诺的服务内容和标准不变的前提下，在签订合同时经旅游者同意，与其他旅行社招徕的旅游者拼成一个团统一安排旅游服务的行为。</p>
+
+<p>14、不可抗力，指不能预见、不能避免并不能克服的客观情况，包括但不限于因自然原因和社会原因引起的，如自然灾害、战争、恐怖活动、动乱、骚乱、罢工、突发公共卫生事件、政府行为。</p>
+
+<p>15、意外事件，指因当事人故意或者过失以外的偶然因素引发的事件，包括但不限于重大礼宾活动导致的交通堵塞、列车航班晚点、景点临时不开放。</p>
+
+<p>16、业务损失费，指旅行社因旅游者行前退团而产生的经济损失。包括乘坐飞机（车、船）等交通工具的费用（含预订金）、饭店住宿费用（含预订金）、旅游观光汽车的人均车租等已发生的实际费用。</p>
+
+<p>17、黄金周，指通过调休将春节、&ldquo;十一&rdquo;等3天法定节日与前后公休日相连形成通常为7天的公众节假日。</p>
+
+<p>&nbsp;</p>
+
+<p>第二章&nbsp; 合同的签订</p>
+
+<p>&nbsp;</p>
+
+<p>第二条&nbsp; &nbsp; &nbsp; 旅游行程安排单</p>
+
+<p>旅行社应当提供带团号的《旅游行程安排单》（以下简称《行程单》），经双方签字或者盖章确认后作为本合同的组成部分。《行程单》应当对如下内容作出明确的说明：</p>
+
+<p>（1）旅游行程的出发地、途经地、目的地，线路行程时间和具体安排（按自然日计算，含乘飞机、车、船等在途时间，不足24小时以一日计）；</p>
+
+<p>（2）旅游目的地地接旅行社的名称、地址、联系人和联系电话；</p>
+
+<p>（3）交通服务安排及其标准（明确交通工具及档次等级、出发时间以及是否需中转等信息）；</p>
+
+<p>（4）住宿服务安排及其标准（明确住宿饭店的名称、地点、星级，非星级饭店应当注明是否有空调、热水、独立卫生间等相关服务设施）；</p>
+
+<p>（5）用餐（早餐和正餐）服务安排及其标准（明确用餐次数、地点、标准）；</p>
+
+<p>（6）旅行社统一安排的游览项目的具体内容及时间（明确旅游线路内容包括景区点及游览项目名称等，景区点停留的最少时间）；</p>
+
+<p>（7）自由活动的时间和次数；</p>
+
+<p>（8）购物安排（旅行社安排的购物次数不超过行程日数的一半，并同时列明购物场所名称、停留的最多时间及主要商品等内容）；</p>
+
+<p>（9）行程安排的娱乐活动（明确娱乐活动的时间、地点和项目内容）；</p>
+
+<p>（10）另行付费项目（如有安排，旅行社应当在签约时向旅游者提供《另行付费项目表》，列明另行付费项目的价格、参加该另行付费项目的交通费和导游服务费等，由旅游者自愿选择并签字确认后作为本合同的组成部分；另行付费项目应当以不影响原计划行程为原则）；</p>
+
+<p>《行程单》用语须准确清晰，在表明服务标准用语中不应当出现&ldquo;准&times;星级&rdquo;、&ldquo;豪华&rdquo;、&ldquo;仅供参考&rdquo;、&ldquo;以&times;&times;为准&rdquo;、&ldquo;与&times;&times;同级&rdquo;等不确定性用语。</p>
+
+<p>第三条&nbsp; &nbsp;&nbsp; 签订合同</p>
+
+<p>旅游者应当认真阅读本合同条款、《行程单》和《另行付费项目表》，在旅游者理解本合同条款及有关附件后，旅行社和旅游者应当签订书面合同。</p>
+
+<p>第四条&nbsp; &nbsp;&nbsp; 旅游广告及宣传品</p>
+
+<p>旅行社的旅游广告及宣传品应当遵循诚实信用的原则，其内容符合《中华人民共和国合同法》要约规定的，视为本合同的组成部分，对旅行社和旅游者双方具有约束力。</p>
+
+<p>第五条　合同效力</p>
+
+<p>本合同一式两份，双方各持一份，具有同等法律效力，自双方当事人签字或者盖章之日起生效。</p>
+
+<p>&nbsp;</p>
+
+<p>第三章&nbsp; 合同双方的权利义务</p>
+
+<p>&nbsp;</p>
+
+<p>第六条&nbsp; &nbsp;&nbsp; 旅行社的权利</p>
+
+<p>1、根据旅游者的身体健康状况及相关条件决定是否接纳旅游者报名参团；</p>
+
+<p>2、核实旅游者提供的相关信息资料；</p>
+
+<p>3、按照合同约定向旅游者收取全额旅游费用；</p>
+
+<p>4、旅游团队遇紧急情况时，可以采取紧急避险措施并要求旅游者配合；</p>
+
+<p>5、拒绝旅游者提出的超出合同约定的不合理要求。</p>
+
+<p>第七条&nbsp; 旅行社的义务</p>
+
+<p>1、按照合同和《行程单》约定的内容和标准为旅游者提供服务；</p>
+
+<p>2、在出团前如实告知具体行程安排和有关具体事项，具体事项包括但不限于所到旅游目的地的重要规定、风俗习惯，安全避险措施，应急联络方式；</p>
+
+<p>3、按照合同约定，为旅游团队安排符合《导游人员管理条例》规定的持证导游人员；</p>
+
+<p>4、妥善保管旅游者提交的各种证件；</p>
+
+<p>5、为旅游者发放用固定格式书写、由旅游者填写的载明个人信息的安全保障卡（包括旅游者的姓名、血型、应急联络方式等）；</p>
+
+<p>6、对可能危及旅游者人身、财产安全的事项和须注意的问题，向旅游者做出真实的说明和明确的警示，并采取合理必要措施防止危害发生，旅游者人身、财产权益受到损害时，应当采取合理必要的保护和救助措施，避免旅游者人身、财产权益损失扩大；</p>
+
+<p>7、按照相关法规、规章的规定投保旅行社责任保险；</p>
+
+<p>8、提示旅游者购买个人旅游保险；</p>
+
+<p>9、应当按照合同约定安排购物和另行付费项目，不强迫或者变相强迫旅游者购物和参加另行付费项目；</p>
+
+<p>10、旅游者在《行程单》安排的购物场所所购物品系假冒伪劣商品时，旅游者提出索赔的，旅行社应当积极协助旅游者进行索赔，自索赔之日起超过60日，旅游者无法从购物点获得赔偿的，旅行社应当先行赔付；</p>
+
+<p>11、向旅游者提供合法的旅游费用发票；</p>
+
+<p>12、依法对旅游者个人信息保密；</p>
+
+<p>13、积极协调处理旅游者在旅游行程中的投诉，出现纠纷时，采取适当措施防止损失扩大；</p>
+
+<p>14、采用拼团方式出团的，签订合同的旅行社仍承担本合同约定的责任和义务。</p>
+
+<p>第八条&nbsp; 旅游者的权利</p>
+
+<p>1、要求旅行社按照合同和《行程单》兑现旅游行程服务；</p>
+
+<p>2、拒绝未经事先协商一致的转团、拼团行为和合同约定以外的购物及另行付费项目安排；</p>
+
+<p>3、在支付旅游费用时要求旅行社开具发票；</p>
+
+<p>4、在合法权益受到损害时向旅游、工商等部门投诉或者要求旅行社协助索赔；</p>
+
+<p>5、《中华人民共和国消费者权益保护法》和有关法律法规赋予消费者的其他权利。</p>
+
+<p>第九条 旅游者的义务</p>
+
+<p>1、如实填写《旅游报名表》、游客安全保障卡等各项内容，并对所填的内容承担责任，如实告知旅行社工作人员询问的与旅游活动相关的个人健康信息，所提供的联系方式须是经常使用或者能够及时联系到的；</p>
+
+<p>2、按照合同约定支付旅游费用；</p>
+
+<p>3、按照合同约定随团完成旅游行程，配合导游人员的统一管理，发生突发事件时，采取措施防止损失扩大；</p>
+
+<p>4、遵守国家和地方的法律法规和有关规定，不在旅游行程中从事违法活动，不参与色情、赌博和涉毒活动；</p>
+
+<p>5、遵守公共秩序和社会公德，尊重当地的民族风俗习惯；尊重旅游服务人员的人格，举止文明，不在景观、建筑上乱刻乱画，不随地吐痰、乱扔垃圾；</p>
+
+<p>6、妥善保管自己的行李物品，尤其是贵重物品；</p>
+
+<p>7、行程中发生纠纷，应当本着平等协商的原则解决，采取适当措施防止损失的扩大，不采取拒绝登机（车、船）等行为拖延行程或者脱团；</p>
+
+<p>8、自行安排活动期间，应当在自己能够控制风险的范围内选择活动项目，并对自己的安全负责；</p>
+
+<p>9、在合法权益受到损害要求旅行社协助索赔时，提供合法有效的凭据。</p>
+
+<p>&nbsp;</p>
+
+<p>第四章&nbsp; 合同的变更与转让</p>
+
+<p>&nbsp;</p>
+
+<p>第十条&nbsp; 合同的变更</p>
+
+<p>1、旅行社与旅游者双方协商一致，可以变更本合同约定的内容，但应当以书面形式由双方签字确认。由此增加的旅游费用及给对方造成的损失，由变更提出方承担；由此减少的旅游费用，旅行社应当退还旅游者。</p>
+
+<p>2、因不可抗力或者意外事件导致无法履行或者继续履行合同的，旅行社可以在征得旅游团队50%以上成员同意后对相应内容予以变更，因情况紧急无法征求意见或者经征求意见无法得到50%以上成员同意时，旅行社可以决定内容的变更，但应当就作出的决定提供必要的证明。</p>
+
+<p>3、在行前遇到不可抗力或者意外事件的，双方经协商可以取消行程或者延期出行。取消行程的，旅行社向旅游者全额退还旅游费用。已发生旅游费用的，应当由双方协商后合理分担。</p>
+
+<p>4、在行程中遇到不可抗力导致无法继续履行合同的，旅行社按本条第2款的约定实施变更后，将未发生的旅游费用退还旅游者，增加的旅游费用，应当由双方协商后合理分担。</p>
+
+<p>5、在行程中遇到意外事件导致无法继续履行合同的，旅行社按本条第2款的约定实施变更后，将未发生的旅游费用退还旅游者，因此增加的旅游费用由提出变更的一方承担（但因紧急避险所致的，由受益方承担）。</p>
+
+<p>第十一条&nbsp; 合同的转让</p>
+
+<p>经旅行社书面同意，旅游者可以将其在合同中的权利和义务转让给符合出游条件的第三人，因此增加的费用由旅游者承担，减少的费用退还旅游者。</p>
+
+<p>第十二条&nbsp; 不成团的安排</p>
+
+<p>当旅行社组团低于成团人数不能成团时，旅游者可以与旅行社就如下安排在本合同第二十二条中做出约定。</p>
+
+<p>1、转团：旅行社可以在保证所承诺的服务内容和标准不降低的前提下，经事先征得旅游者书面同意，将旅游者转至其他旅行社所组的旅游团队，并就受让出团的旅行社违反本合同约定的行为先行承担责任，再行追偿。旅游者和受让出团的旅行社另行签订合同的，本合同的权利义务终止。</p>
+
+<p>2、延期出团和改变线路出团：旅行社经征得旅游者书面同意，可以延期出团或者改变其他线路出团，需要时可以重新签订旅游合同，因此增加的费用由旅游者承担，减少的费用旅行社予以退还。</p>
+
+<p>&nbsp;</p>
+
+<p>第五章&nbsp; 合同的解除</p>
+
+<p>&nbsp;</p>
+
+<p>第十三条&nbsp; 不同意转团、延期出团和改变旅游线路的合同解除</p>
+
+<p>低于成团人数不能成团时，旅游者既不同意转团，也不同意延期和改变其他线路出团的，视为旅行社解除合同，按本合同第十四条、第十六条第1款相关约定处理。</p>
+
+<p>第十四条　行程前的合同解除</p>
+
+<p>旅游者和旅行社在行程前可以书面形式提出解除合同。在出发前7日(按出发日减去解除合同通知到达日的自然日之差计算，下同)以上（不含第7日）提出解除合同的，双方互不承担违约责任。旅行社提出解除合同的，全额退还旅游费用；旅游者提出解除合同，如已发生旅游费用的，应当扣除已发生的旅游费用。旅行社应当在解除合同的通知到达日起5个工作日内，向旅游者退还旅游费用。</p>
+
+<p>旅游者或者旅行社在出发前7日以内（含第7日，下同）提出解除合同的，由提出解除合同的一方承担违约责任。</p>
+
+<p>第十五条&nbsp; 行程中的合同解除</p>
+
+<p>1、旅游者未按约定时间到达约定集合出发地点，也未能在出发中途加入旅游团队的，视为旅游者解除合同，按照本合同第十七条第1款相关约定处理；</p>
+
+<p>2、旅游者在行程中脱团的，旅行社可以解除合同，旅游者不得要求旅行社退还旅游费用，给旅行社造成经济损失的，旅游者应当承担相应的赔偿责任。</p>
+
+<p>&nbsp;</p>
+
+<p>第六章&nbsp; 违约责任</p>
+
+<p>&nbsp;</p>
+
+<p>第十六条　&nbsp; 旅行社的违约责任</p>
+
+<p>1、旅行社在出发前7日以内（含第7日，下同）提出解除合同的，向旅游者退还全额旅游费用，并按下列标准向旅游者支付违约金：</p>
+
+<p>出发前7日至4日，支付旅游费用总额10%的违约金；</p>
+
+<p>出发前3日至1日，支付旅游费用总额15%的违约金；</p>
+
+<p>出发当日，支付旅游费用总额20%的违约金。</p>
+
+<p>如上述违约金不足以赔偿旅游者的实际损失，旅行社应当按实际损失对旅游者予以赔偿。</p>
+
+<p>旅行社应当在取消出团通知到达日起5个工作日内，向旅游者退还全额旅游费用，并支付上述违约金。</p>
+
+<p>2、旅行社未按合同约定提供服务，或者未经旅游者同意调整旅游行程（本合同第十条第2款规定的情况除外），造成项目减少、旅游时间缩短或者标准降低的，应当采取措施予以补救，未采取补救措施或者已采取补救措施但不足以弥补旅游者损失的，应当承担相应的赔偿责任。</p>
+
+<p>3、旅行社未经旅游者签字确认，安排本合同约定以外的另行付费项目的，应当承担自费项目的费用；擅自增加购物次数的，每次按旅游费用总额的10%向旅游者支付违约金；强迫或者变相强迫旅游者购物的，每次按旅游费用总额的20%向旅游者支付违约金。</p>
+
+<p>4、旅行社违反合同约定，中止对旅游者提供住宿、用餐、交通等旅游服务的，应当负担旅游者在被中止旅游服务期间所订的同等级别的住宿、用餐、交通等必要费用，并向旅游者支付旅游费用总额30%的违约金；如果因此给旅游者造成其他人身、财产损害的，还应当承担损害赔偿责任。</p>
+
+<p>5、旅行社未经旅游者同意，擅自将旅游者转团、拼团的，旅游者在出发前（不含当日）得知的，有权解除合同，旅行社全额退还已交旅游费用，并按旅游费用总额的15%支付违约金；旅游者在出发当日或者出发后得知的，旅行社应当按旅游费用总额的25%支付违约金，旅游者要求解除合同的，旅行社全额退还已交旅游费用；如违约金不足以赔偿旅游者的实际损失，旅行社应当按实际损失对旅游者予以赔偿。</p>
+
+<p>6、与旅游者出现纠纷时，旅行社应当采取积极措施防止损失扩大，否则应当就扩大的损失承担责任。</p>
+
+<p>7、旅行社委托的第三方违反本合同约定，视同旅行社违约，旅行社应当按照本合同约定承担违约责任。</p>
+
+<p>第十七条&nbsp; 旅游者的违约责任</p>
+
+<p>1、旅游者在出发前7日以内（含第7日，下同）提出解除合同的，应当按下列标准向旅行社支付业务损失费：</p>
+
+<p>出发前7日至4日，支付旅游费用总额50%；</p>
+
+<p>出发前3日至1日，支付旅游费用总额60%；</p>
+
+<p>出发当日，支付旅游费用总额80%。</p>
+
+<p>如按上述比例支付的业务损失费不足以赔偿旅行社的实际损失，旅游者应当按实际损失对旅行社予以赔偿，但最高额不应当超过旅游费用总额。</p>
+
+<p>旅行社在扣除上述业务损失费后，应当在旅游者退团通知到达日起5个工作日内向旅游者退还剩余旅游费用。</p>
+
+<p>2、旅游者未能按照本合同约定的时间足额支付旅游费用的，旅行社有权解除合同，并要求旅游者承担旅行社的业务损失费。</p>
+
+<p>3、旅游者因不听从旅行社及其导游的劝告而影响团队行程，给旅行社造成损失的，应当承担相应的赔偿责任。</p>
+
+<p>4、旅游者超出本合同约定的内容进行个人活动所造成的损失，由其自行承担。</p>
+
+<p>5、由于旅游者的过错，使旅行社遭受损害的，旅游者应当赔偿损失。</p>
+
+<p>6、与旅行社出现纠纷时，旅游者应当采取积极措施防止损失扩大，否则应当就扩大的损失承担责任。</p>
+
+<p>第十八条&nbsp; 其他责任</p>
+
+<p>1、由于第三方侵害等不可归责于旅行社的原因导致旅游者人身、财产权益受到损害的，旅行社不承担赔偿责任。但因旅行社不履行协助义务致使旅游者人身、财产权益损失扩大的，旅行社应当就扩大的损失承担赔偿责任。</p>
+
+<p>2、旅游者在自行安排活动期间人身、财产权益受到损害的，旅行社在事前已尽到必要警示说明义务且事后已尽到必要协助义务的，旅行社不承担赔偿责任</p>, 2019-01-15 18:36:55, 2019-01-15 18:36:55)) at /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, Doctrine\\DBAL\\Driver\\PDOException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:119, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:117)
+[stacktrace]
+#0 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `co...', Array, Object(Closure))
+#1 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('insert into `co...', Array, Object(Closure))
+#2 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `co...', Array)
+#3 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `co...', Array)
+#4 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2628): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `co...', Array, 'id')
+#5 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1318): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(823): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(788): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(651): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(366): Illuminate\\Database\\Eloquent\\Model->save()
+#10 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php(29): Encore\\Admin\\Form->Encore\\Admin\\{closure}(Object(Illuminate\\Database\\MySqlConnection))
+#11 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(327): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#12 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\DatabaseManager->__call('transaction', Array)
+#13 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(369): Illuminate\\Support\\Facades\\Facade::__callStatic('transaction', Array)
+#14 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Controllers/HasResourceActions.php(26): Encore\\Admin\\Form->store()
+#15 [internal function]: App\\Admin\\Controllers\\ContractController->store()
+#16 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#17 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#18 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Admin\\Controllers\\ContractController), 'store')
+#19 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#20 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Routing\\Route->run()
+#21 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Permission.php(42): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Permission->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Bootstrap.php(36): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Bootstrap->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/LogOperation.php(38): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\LogOperation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Pjax.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Pjax->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Authenticate.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#58 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#59 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#60 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#61 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/zhaoyejin/www/laravel_shop/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#73 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#74 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#79 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#80 /Users/zhaoyejin/www/laravel_shop/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#81 {main}
+"} 
+[2019-01-15 19:09:24] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'province_id' in 'field list' (SQL: insert into `destination` (`province_id`, `city_id`, `district_id`, `updated_at`, `created_at`) values (北京市, 北京城区, 东城区, 2019-01-15 19:09:24, 2019-01-15 19:09:24)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'province_id' in 'field list' (SQL: insert into `destination` (`province_id`, `city_id`, `district_id`, `updated_at`, `created_at`) values (北京市, 北京城区, 东城区, 2019-01-15 19:09:24, 2019-01-15 19:09:24)) at /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, Doctrine\\DBAL\\Driver\\PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'province_id' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:63, PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'province_id' in 'field list' at /Users/zhaoyejin/www/laravel_shop/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:61)
+[stacktrace]
+#0 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `de...', Array, Object(Closure))
+#1 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('insert into `de...', Array, Object(Closure))
+#2 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `de...', Array)
+#3 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `de...', Array)
+#4 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2628): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `de...', Array, 'id')
+#5 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1318): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(823): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(788): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(651): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(366): Illuminate\\Database\\Eloquent\\Model->save()
+#10 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/Concerns/ManagesTransactions.php(29): Encore\\Admin\\Form->Encore\\Admin\\{closure}(Object(Illuminate\\Database\\MySqlConnection))
+#11 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(327): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#12 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\DatabaseManager->__call('transaction', Array)
+#13 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Form.php(369): Illuminate\\Support\\Facades\\Facade::__callStatic('transaction', Array)
+#14 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Controllers/HasResourceActions.php(26): Encore\\Admin\\Form->store()
+#15 [internal function]: App\\Admin\\Controllers\\DestinationController->store()
+#16 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+#17 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#18 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Admin\\Controllers\\DestinationController), 'store')
+#19 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#20 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(682): Illuminate\\Routing\\Route->run()
+#21 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Permission.php(42): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Permission->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Bootstrap.php(36): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Bootstrap->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/LogOperation.php(38): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\LogOperation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Pjax.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Pjax->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/zhaoyejin/www/laravel_shop/vendor/encore/laravel-admin/src/Middleware/Authenticate.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Encore\\Admin\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#58 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#59 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#60 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#61 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#62 /Users/zhaoyejin/www/laravel_shop/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#63 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#66 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#69 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#70 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#71 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#72 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#73 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#74 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#75 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#76 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#77 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#78 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#79 /Users/zhaoyejin/www/laravel_shop/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#80 /Users/zhaoyejin/www/laravel_shop/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#81 {main}
+"} 
